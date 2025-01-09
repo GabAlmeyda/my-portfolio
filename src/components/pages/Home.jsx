@@ -2,7 +2,9 @@ import styles from './Home.module.css'
 
 function Home() {
     
-    return
+    return (<div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia quas dolore excepturi, sapiente asperiores similique expedita aliquid voluptate? Aut sapiente soluta, error minus alias facere? Nesciunt voluptatibus numquam provident blanditiis aspernatur accusantium itaque enim neque amet ipsa. Cumque quidem veniam fugit. Velit quibusdam animi aliquam vel earum optio adipisci molestiae similique repudiandae nemo itaque nisi eius odit possimus quis expedita, laudantium vitae officiis eaque perferendis facere! Similique pariatur quae impedit aut, inventore nisi, eligendi corrupti modi maiores dolore excepturi amet! Ullam eveniet tempore nam consectetur magni placeat, voluptate mollitia. Illum, impedit veniam. Sapiente porro facilis ea perspiciatis. Aspernatur culpa tempora reiciendis officiis pariatur velit magnam eaque sapiente? Recusandae cumque doloremque consequatur ratione voluptates maiores laboriosam mollitia sint expedita, consequuntur assumenda, optio adipisci officia quisquam. Aliquam dolore obcaecati officiis in adipisci sint voluptatem explicabo aut unde quibusdam iusto quos, delectus voluptatibus reiciendis voluptatum, facilis, nesciunt a ullam debitis distinctio porro. Aut, inventore. Voluptatem iusto quis consectetur voluptates ipsam. Eos, similique sint! Qui placeat rerum autem ad sequi et necessitatibus eaque cupiditate, eum, quas velit perspiciatis quae expedita porro iusto officiis minus! Aliquid assumenda exercitationem magni. Accusantium excepturi architecto, tempore natus quisquam cum praesentium ex autem id et odit nobis. Repellat molestiae magni laboriosam consectetur doloribus doloremque nesciunt, autem deserunt unde? Possimus iusto impedit temporibus inventore in non eum, eligendi natus sit. Excepturi, corporis.</p>
+    </div>)
 }
 
 export default Home

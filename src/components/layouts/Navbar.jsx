@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import styles from './Navbar.module.css'
 
@@ -10,6 +10,16 @@ import logo from '../../images/logo.webp'
 function Navbar() {
 
     const [isMenuVisible, setIsMenuVisible] = useState(false);
+
+    useEffect(() => {
+        
+        if (isMenuVisible) {
+            document.body.classList.add("menuVisible");
+        }
+        else {
+            document.body.classList.remove("menuVisible");
+        }
+    }, [isMenuVisible]);
     
     function toggleMenuVisibility() {
         setIsMenuVisible(!isMenuVisible);
@@ -18,7 +28,7 @@ function Navbar() {
     return (<>
         <nav className={styles.navbar}>
             <div className={styles.logo}>
-                <Link to="/">
+                <Link to="/my-portfolio">
                     <img src={logo} alt="Gabriel Almeyda" />
                 </Link>
             </div>
@@ -39,13 +49,14 @@ function Navbar() {
                     <a href="#tools">Tools</a>
                 </li>
                 <li>
-                    <Link to="/projects">Projects</Link>
+                    <Link to="/my-portfolio/projects">Projects</Link>
                 </li>
                 <li>
-                    <Link to="/contact">Contact</Link>
+                    <Link to="/my-portfolio/contact">Contact</Link>
                 </li>
             </ul>
         </nav>
+        <div className={styles.bottomSpace}></div>
     </>)
 }
 

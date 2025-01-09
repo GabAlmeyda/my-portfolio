@@ -9,6 +9,7 @@ import Container from './components/layouts/Container'
 import Home from './components/pages/Home'
 import Contact from './components/pages/Contact'
 import Projects from './components/pages/Projects'
+import NotFound from './components/pages/NotFound'
 
 function App() {
 
@@ -18,9 +19,10 @@ function App() {
 
     <Container>
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/projects' element={<Projects />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path='/my-portfolio' element={ <Home /> } />
+        <Route path='/my-portfolio/projects' element={ <Projects /> } />
+        <Route path='/my-portfolio/contact' element={ <Contact /> } />
+        <Route path='*' element={ <NotFound /> } />
       </Routes>
     </Container>
 
