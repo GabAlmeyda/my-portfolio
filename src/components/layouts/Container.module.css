@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 100%;
+}
+
+.start {
+    justify-content: flex-start;
+}
+
+.row {
+    flex-direction: row;
+}

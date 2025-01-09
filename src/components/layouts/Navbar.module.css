@@ -1,0 +1,57 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 1rem;
+
+    background-color: transparent;
+}
+
+.navbar .logo img {
+    height: 50px;
+
+    border-radius: 50%;
+}
+.navbar label svg {
+    cursor: pointer;
+
+    font-size: 3.5em;
+}
+
+.navbar ul {
+    width: 100%;
+
+    margin-top: 3rem;
+
+    list-style: none;
+}
+
+ul.visible {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    height: 100vh;
+}
+ul.visible li {
+    margin-bottom: .7rem;
+    padding: .3rem;
+
+    text-align: end;
+}
+ul.visible li * {
+
+    font-size: 2em;
+    color: #fff;
+}
+ul.visible li:last-child {
+    border-radius: 15px;
+
+    background-color: var(--acc-color-1);
+}
+
+ul.hidden {
+    display: none;
+}
