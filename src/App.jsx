@@ -15,8 +15,6 @@ function App() {
 
   return (<Router>
 
-    <Navbar />
-
     <Container>
       <Routes>
         <Route path='/my-portfolio' element={ <Home /> } />

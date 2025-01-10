@@ -82,14 +82,13 @@ function Navbar() {
                     }}>Ferramentas</a>
                 </li>
                 <li>
-                    <Link to="/my-portfolio/projects">Projetos</Link>
+                    <Link to="/my-portfolio/projects" onClick={toggleMenuVisibility}>Projetos</Link>
                 </li>
                 <li>
-                    <Link to="/my-portfolio/contact">Contato</Link>
+                    <Link to="/my-portfolio/contact" onClick={toggleMenuVisibility}>Contato</Link>
                 </li>
             </ul>
         </nav>
-        <div className={styles.bottomSpace}></div>
     </>)
 }
 

@@ -1,0 +1,44 @@
+.header {
+    height: 100vh;
+
+    background-color: var(--bg-color-alt);
+}
+.header > *:not(nav, .linkButton) {
+    margin-inline: 1rem;
+}
+
+.header h1 > p{
+    margin-top: 4rem;
+
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.header h1 > span {
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: var(--acc-color-2);
+}
+
+.header > p {
+    margin-top: -.5rem;
+}
+
+.icons_container {
+    margin-top: 1rem;
+}
+
+.icons_container svg{
+    margin-right: .5rem;
+
+    font-size: 2.5rem;
+    color: white;
+
+    transition: .2s;
+}
+.icons_container svg:hover {
+    transform: scale(1.1);
+}
+
+.linkButton {
+    margin-top: 6rem;
+}

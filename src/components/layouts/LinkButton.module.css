@@ -1,0 +1,34 @@
+.btn {
+    display: block;
+
+    width: clamp(250px, 60%, 300px);
+
+    margin: 40px auto;
+    padding: .4rem 1rem;
+    border: none;
+    border-radius: 25px;
+
+    background-color: var(--acc-color-1);
+
+    transition: .2s;
+}
+.btn:hover {
+    background-color: var(--acc-color-1_hover);
+    transform: scale(1.03);
+}
+.btn:active {
+    background-color: var(--acc-color-1_active);
+    transform: scale(1);
+}
+
+.btn :hover * {
+    color: lightgray;
+}
+.btn:active * {
+    color: gray;
+}
+
+.btn * {
+    color: white;
+    font-size: 1.3rem;
+}

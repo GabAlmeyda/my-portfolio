@@ -6,8 +6,13 @@
   --bg-color: hsl(0, 0%, 9%);
   --bg-color-alt: hsl(0, 0%, 3%);
 
-  --acc-color-1: #ff5900;
-  --acc-color-2: #8200c1;
+  --acc-color-1: hsl(21, 100%, 50%);
+  --acc-color-1_hover: hsl(21, 100%, 40%);
+  --acc-color-1_active: hsl(21, 100%, 30%);
+
+  --acc-color-2: hsl(280, 100%, 38%);
+  --acc-color-2_hover: hsl(280, 100%, 28%);
+  --acc-color-2_active: hsl(280, 100%, 20%);
 }
 
 * {
