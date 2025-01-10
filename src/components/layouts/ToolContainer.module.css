@@ -1,0 +1,48 @@
+.tool_container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: clamp(300px, 90%, 700px);
+
+    border: 2px solid var(--acc-color-2);
+    border-radius: 10px;
+    margin-inline: auto;
+    margin-block: .3rem;
+    padding: .5rem .3rem;
+
+    transition: .3s;
+
+    user-select: none;
+}
+.tool_container:hover {
+    transform: scale(1.05   );
+}
+
+.tool_container > * {
+    transition: .3s;
+}
+.tool_container:hover > * {
+    transform: translateX(20px);
+}
+
+.tool_container span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 1rem;
+    margin-left: 1.5rem;
+}
+
+.tool_container span svg{
+    font-size: 3.5rem;
+}
+
+.tool_container h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-variant: small-caps;
+}
+
