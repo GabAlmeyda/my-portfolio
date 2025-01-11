@@ -1,42 +1,4 @@
-.section {
-    padding: 1rem;
-    padding-block: 3.5rem;
-
-}
-
-.section h2 {
-    max-width: 90%;
-    position: relative;
-
-    margin-bottom: 0.8rem;
-
-    font-size: 2em;
-    font-weight: 600;
-}
-.section h2::after {
-    content: "";
-
-    position: absolute;
-    left: 0;
-    bottom: 5px;
-
-    width: 100%;
-    height: 2px;
-
-    background-color: var(--font-color);
-}
-
-.section p {
-    margin-bottom: 1rem;
-
-    font-size: 1.1em;
-    line-height: 1.6;
-}
-
-/* About section */
-
 /* Tools section */
-
 .tools {
     background-color: var(--bg-color-alt);
 }
@@ -44,3 +6,5 @@
 .tools p {
     margin-bottom: 2rem;
 }
+
+/* Projects section */

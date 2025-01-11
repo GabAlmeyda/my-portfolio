@@ -1,0 +1,22 @@
+.section {
+    padding: 1rem;
+    padding-block: 3.5rem;
+}
+
+.section h2 {
+    max-width: 90%;
+    position: relative;
+
+    margin-bottom: 0.8rem;
+
+    font-size: 2em;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.section p {
+    margin-bottom: 1rem;
+
+    font-size: 1.1em;
+    line-height: 1.6;
+}
