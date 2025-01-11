@@ -74,9 +74,6 @@ ul.visible {
 
     height: 100vh;
 }
-body.menuVisible {
-    overflow: hidden;
-}
 
 ul.hidden {
     display: none;

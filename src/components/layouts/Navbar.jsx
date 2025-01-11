@@ -35,14 +35,11 @@ function Navbar() {
     }, [location])
 
     useEffect(() => {
-        
         if (isMenuVisible) {
-            document.body.classList.add("menuVisible");
-            document.documentElement.classList.add("menuVisible");
+            document.body.style.overflow = "hidden";
         }
         else {
-            document.body.classList.remove("menuVisible");
-            document.documentElement.classList.remove("menuVisible");
+            document.body.style.overflow = "visible";
 
         }
     }, [isMenuVisible]);
