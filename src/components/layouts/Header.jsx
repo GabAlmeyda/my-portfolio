@@ -21,7 +21,7 @@ function Header() {
             <a href='#' rel='noopender noreferre' target='_blank'><AiFillLinkedin /></a>
         </div>
 
-        <LinkButton to="/contact" text="Contate-me" customClass="important" />
+        <LinkButton to="/my-portfolio/contact" text="Contate-me" customClass="important" />
     </header>)
 }
 

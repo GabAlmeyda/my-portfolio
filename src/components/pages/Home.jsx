@@ -43,7 +43,7 @@ function Home() {
                 </ProjectCard>
             </Container>
 
-            <LinkButton text="Veja meus projetos" to="/projects" customClass="important" />
+            <LinkButton text="Veja meus projetos" to="/my-portfolio/projects" customClass="important" />
         </Section>
  
         <Section id="contact" customClass={styles.contact}>
@@ -51,7 +51,7 @@ function Home() {
                 <h2>Precisa de algum serviço?</h2>
                 <p>Estou a postos para fazer o melhor site, no menor tempo possível</p>
     
-                <LinkButton to="/contact" text="Contate-me" customClass="important" />
+                <LinkButton to="/my-portfolio/contact" text="Contate-me" customClass="important" />
             </div>
         </Section>
         

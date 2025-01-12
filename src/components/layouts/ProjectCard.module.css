@@ -6,8 +6,8 @@
     padding: .5rem;
     margin-inline: auto;
 
-    box-shadow: 4px 0px 5px hsla(0, 0%, 0%, 0.350), 0px 4px 5px hsla(0, 0%, 0%, 0.350),  
-    -4px 0px 5px hsla(0, 0%, 0%, 0.350),  0px -4px 5px hsla(0, 0%, 0%, 0.350);
+    box-shadow: 4px 0px 5px hsla(0, 0%, 0%, 0.250), 0px 4px 5px hsla(0, 0%, 0%, 0.250),  
+    -4px 0px 5px hsla(0, 0%, 0%, 0.250),  0px -4px 5px hsla(0, 0%, 0%, 0.250);
 
     background-color: hsl(0, 0%, 5%);
 
@@ -58,6 +58,9 @@
 /* Card of the Projects Component (bigger)*/
 .project.full_card {
     width: 100%;
+}
+.project.full_card:hover {
+    transform: scale(1.02);
 }
 
 .project.full_card h2 {

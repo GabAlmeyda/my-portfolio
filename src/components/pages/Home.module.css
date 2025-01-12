@@ -1,6 +1,20 @@
+body, html {
+    background-color: var(--bg-color-alt);
+}
+
+/* About section*/
+.about {
+    background-color: var(--bg-color);
+}
+
 /* Tools section */
 .tools {
     background-color: var(--bg-color-alt);
+}
+
+/* Projects section*/
+.projects {
+    background-color: var(--bg-color);
 }
 
 /* Contact section */
@@ -26,5 +40,5 @@
     margin-top: .3rem;
 
     text-align: center;
-    color: rgb(155, 155, 155);
+    color: var(--font-color);
 }

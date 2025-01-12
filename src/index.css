@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --font-color: hsl(0, 0%, 88%);
+  --font-color: hsl(0, 0%, 87%);
   --font-color-alt: hsl(0, 0%, 50%);
-  --bg-color: rgb(0, 23, 71);
-  --bg-color-alt: rgb(3, 0, 41);
+  --bg-color: rgb(13, 26, 53);
+  --bg-color-alt: rgb(3, 0, 30);
 
   --acc-color-1: hsl(0, 100%, 44%);
   --acc-color-1_hover: hsl(0, 100%, 35%);
@@ -25,10 +25,26 @@
   font-size: 1rem;
 }
 
+::-webkit-scrollbar-thumb {
+  background: var(--acc-color-2);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--acc-color-2_hover);
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
+
 html, body, #root {
   height: 100vh;
 
-  background-color: var(--bg-color);
+  scrollbar-width: thin;
+  scrollbar-color: var(--acc-color-2) transparent;
+
 
   color: var(--font-color);
 }

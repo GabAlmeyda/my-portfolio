@@ -16,13 +16,13 @@
     user-select: none;
 }
 .tool_container:hover {
-    transform: scale(1.05   );
+    transform: scale(1.05);
 }
 
 .tool_container > * {
     transition: .3s;
 }
-.tool_container:hover > * {
+.tool_container:not(.small_card):hover > * {
     transform: translateX(20px);
 }
 
@@ -48,3 +48,24 @@
     font-variant: small-caps;
 }
 
+/* 'small_card' custom class*/
+
+.small_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    flex-basis: 90px;
+
+    max-width: 230px;
+
+    margin-inline: .3rem;
+}
+
+.small_card span {
+    margin: 0;
+}
+
+.small_card span svg {
+    font-size: 3rem;
+}

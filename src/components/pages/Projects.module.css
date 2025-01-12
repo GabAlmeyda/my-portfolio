@@ -1,0 +1,46 @@
+body, html {
+    background-color: var(--bg-color);
+}
+
+.projects_container {
+    margin-top: 2rem;
+}
+
+.projects_container h3 {
+    color: var(--font-color);
+    font-weight: 600;
+}
+
+.top h1 {
+    position: relative;
+
+    margin-bottom: 10rem;
+
+    font-size: 2.3em;
+    color: var(--acc-color-2);
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.25;
+}
+.top h1::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+
+    height: 3px;
+    width: 100%;
+
+    background-color: var(--acc-color-1);
+}
+.top h1::before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+
+    height: 3px;
+    width: 100%;
+
+    background-color: var(--acc-color-1);
+}
