@@ -3,8 +3,8 @@
 :root {
   --font-color: hsl(0, 0%, 88%);
   --font-color-alt: hsl(0, 0%, 50%);
-  --bg-color: hsl(220, 100%, 6%);
-  --bg-color-alt: hsl(245, 100%, 3%);
+  --bg-color: rgb(0, 23, 71);
+  --bg-color-alt: rgb(3, 0, 41);
 
   --acc-color-1: hsl(0, 100%, 44%);
   --acc-color-1_hover: hsl(0, 100%, 35%);

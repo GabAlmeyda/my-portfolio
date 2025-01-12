@@ -5,7 +5,7 @@ import styles from './Navbar.module.css'
 
 import { AiOutlineMenuFold, AiOutlineMenuUnfold } from "react-icons/ai";
 
-import logo from '../../images/logo.webp'
+import logo from '/logo.webp'
 
 function Navbar() {
     const navigate = useNavigate();
