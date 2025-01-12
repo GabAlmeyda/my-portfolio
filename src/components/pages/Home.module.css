@@ -3,8 +3,28 @@
     background-color: var(--bg-color-alt);
 }
 
-.tools p {
-    margin-bottom: 2rem;
+/* Contact section */
+.contact {
+    background-color: var(--bg-color-alt);
+}
+.contact_container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+
+    margin-bottom: 3rem;
 }
 
-/* Projects section */
+.contact_container h2 {
+    font-size: 2.5em;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    color: var(--acc-color-2);
+}
+.contact_container p {
+    margin-top: .3rem;
+
+    text-align: center;
+    color: rgb(155, 155, 155);
+}

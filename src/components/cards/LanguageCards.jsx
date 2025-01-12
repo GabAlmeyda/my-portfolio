@@ -18,13 +18,9 @@ function LanguageCards() {
         { name: "React", icon: <IoLogoReact />, color: "aqua" }
     ];
 
-    return (<Container>
+    return (<Container customClass="marginTop">
         {devLangs.map(lang => (
-            <ToolContainer key={lang.name}
-                name={lang.name}
-                icon={lang.icon}
-                color={lang.color}
-            />
+            <ToolContainer key={lang.name} {...lang} />
         ))}
     </Container>)
 }

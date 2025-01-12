@@ -6,13 +6,13 @@
   --bg-color: hsl(220, 100%, 6%);
   --bg-color-alt: hsl(245, 100%, 3%);
 
-  --acc-color-1: hsl(21, 100%, 50%);
-  --acc-color-1_hover: hsl(21, 100%, 40%);
-  --acc-color-1_active: hsl(21, 100%, 30%);
+  --acc-color-1: hsl(0, 100%, 44%);
+  --acc-color-1_hover: hsl(0, 100%, 35%);
+  --acc-color-1_active: hsl(0, 100%, 27%);
 
-  --acc-color-2: hsl(280, 100%, 38%);
-  --acc-color-2_hover: hsl(280, 100%, 28%);
-  --acc-color-2_active: hsl(280, 100%, 20%);
+  --acc-color-2: hsl(17, 100%, 50%);
+  --acc-color-2_hover: hsl(17, 100%, 28%);
+  --acc-color-2_active: hsl(17, 100%, 20%);
 }
 
 * {

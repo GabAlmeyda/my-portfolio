@@ -1,9 +1,14 @@
-.btn {
-    display: block;
+.btn_container {
+    text-align: center;
+}
 
+.important {
+    margin-top: 6rem;
+}
+
+.btn {
     width: clamp(250px, 60%, 300px);
 
-    margin: 40px auto;
     padding: .4rem 1rem;
     border: none;
     border-radius: 25px;

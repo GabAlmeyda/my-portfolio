@@ -14,3 +14,7 @@
 .row {
     flex-direction: row;
 }
+
+.marginTop {
+    margin-top: 2.5rem;
+}

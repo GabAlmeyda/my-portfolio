@@ -30,14 +30,10 @@
     margin-right: .5rem;
 
     font-size: 2.5rem;
-    color: white;
+    color: var(--acc-color-2);
 
     transition: .2s;
 }
 .icons_container svg:hover {
     transform: scale(1.1);
-}
-
-.linkButton {
-    margin-top: 6rem;
 }

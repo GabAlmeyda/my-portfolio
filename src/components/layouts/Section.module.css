@@ -3,15 +3,14 @@
     padding-block: 3.5rem;
 }
 
-.section h2 {
-    max-width: 90%;
-    position: relative;
-
+.section > h2 {
     margin-bottom: 0.8rem;
 
     font-size: 2em;
     font-weight: 600;
     text-decoration: underline;
+    color: var(--acc-color-2);
+    line-height: 1.2;
 }
 
 .section p {
@@ -20,3 +19,4 @@
     font-size: 1.1em;
     line-height: 1.6;
 }
+

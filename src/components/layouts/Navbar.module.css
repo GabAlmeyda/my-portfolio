@@ -17,16 +17,20 @@
 }
 
 .navbar .logo img {
+    position: relative;
+
+    user-select: none;
+
     height: 50px;
 
     border-radius: 50%;
-
-    user-select: none;
 }
+
 .navbar label svg {
     cursor: pointer;
 
     font-size: 3.5em;
+    color: var(--acc-color-2);
 }
 
 .navbar ul {
