@@ -38,6 +38,7 @@
     margin-bottom: .7rem;
 
     color: var(--acc-color-2);
+    background-color: var(--acc-color-2);
 }
 
 .project:not(.full_card) .children {
@@ -70,4 +71,10 @@
     text-decoration: none;
     letter-spacing: 2px;
     font-variant: small-caps;
+    color: var(--acc-color-2);
+}
+
+.project.full_card h3 {
+    margin-top: 1rem;
+    margin-bottom: .3rem;
 }

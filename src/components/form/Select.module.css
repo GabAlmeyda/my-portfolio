@@ -1,0 +1,50 @@
+.select_container {
+	margin-bottom: 1.5rem;
+}
+
+.select_container label {
+	display: inline-block;
+
+	margin-bottom: .3rem;
+
+	font-size: 1.3em;
+	font-weight: 500;
+	letter-spacing: 1px;
+	color: var(--acc-color-2);
+
+}
+
+.select_container select {
+	display: inline-block;
+
+	width: clamp(300px, 95%, 800px);
+
+	border: 2px solid white;
+	border-radius: 15px;
+	padding: .3rem .5rem;
+
+	background-color: transparent;
+
+	color: var(--font-color);
+
+	transition: .2s;
+}
+.select_container select:hover {
+	border-color: gray;
+}
+.select_container select:focus {
+	outline: none;
+	border: 2px solid var(--acc-color-1);
+}
+
+.select_container select option {
+	background-color: #eee;
+
+	font-family: var(--font-family);
+	color: #111;
+}
+.select_container select option:first-child {
+	background-color: #111;
+
+	color: #eee;
+}

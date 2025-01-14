@@ -1,0 +1,13 @@
+body.home_bg {
+    background-color: var(--bg-color-alt);
+}
+body.projects_bg {
+    background-color: var(--bg-color);
+}
+body.contact_bg {
+    background-color: var(--bg-color-alt);
+}
+body.notFound_bg {
+    background-color: rgb(27, 27, 27);
+}
+

@@ -1,0 +1,8 @@
+.form {
+	margin: 0.5rem;
+	border: 2px solid var(--font-color);
+	border-radius: 10px;
+
+	padding-inline: 1rem;
+	padding-block: 2rem;
+}

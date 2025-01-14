@@ -1,0 +1,14 @@
+.top {
+	height: 40vh;
+
+	padding-inline: 1rem;
+	padding-top: 4rem;
+
+	text-align: left;
+}
+
+.top h1 {
+	font-size: 2rem;
+	line-height: 1.3;
+	color: var(--acc-color-2);
+}

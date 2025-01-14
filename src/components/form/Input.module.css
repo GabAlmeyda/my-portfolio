@@ -1,0 +1,39 @@
+.input_container {
+	margin-bottom: 1.5rem;
+	max-width: 100%;
+}
+
+.input_container label {
+	display: inline-block;
+
+	margin-bottom: .3rem;
+
+	font-size: 1.3em;
+	font-weight: 500;
+	letter-spacing: 1px;
+	color: var(--acc-color-2);
+}
+
+.input_container input {
+	display: inline-block;
+
+	width: clamp(300px, 95%, 800px);
+
+
+	border: 2px solid white;
+	border-radius: 15px;
+	padding: .3rem .5rem;
+
+	background-color: transparent;
+
+	color: var(--font-color);
+
+	transition: .2s;
+}
+.input_container input:hover {
+	border-color: gray;
+}
+.input_container input:focus {
+	outline: none;
+	border: 2px solid var(--acc-color-1);
+}

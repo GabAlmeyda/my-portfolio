@@ -1,0 +1,42 @@
+.submit_container {
+	width: 100%;
+
+	text-align: center;
+}
+
+.submit {
+	display: inline-block;
+
+    width: clamp(250px, 60%, 300px);
+
+    padding: .4rem 1rem;
+    border: none;
+    border-radius: 25px;
+	margin-block: 1rem;
+
+    background-color: var(--acc-color-1);
+
+	color: white;
+
+    transition: .2s;
+}
+.submit:hover {
+    background-color: var(--acc-color-1_hover);
+    transform: scale(1.02);
+}
+.submit:active {
+    background-color: var(--acc-color-1_active);
+    transform: scale(1);
+}
+
+.submit:hover * {
+    color: lightgray;
+}
+.submit:active * {
+    color: gray;
+}
+
+.submit * {
+    color: white;
+    font-size: 1.3rem;
+}

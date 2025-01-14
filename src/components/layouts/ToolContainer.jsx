@@ -5,7 +5,7 @@ function ToolContainer({ name, icon, color, customClass }) {
     return (
         <div className={`${styles.tool_container} ${styles[customClass]}`}>
             <span style={{color: color}}>{icon}</span>
-            {!customClass === "small_card" && <p style={{color: color}}>{name}</p>}
+            {!(customClass === "small_card") && <p style={{color: color}}>{name}</p>}
         </div>
     )
 }
