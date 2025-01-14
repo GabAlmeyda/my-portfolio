@@ -52,6 +52,7 @@ function Contact() {
                 label="Digite seu nome:"
                 placeholder="Insira seu nome"
                 value={userData.userName}
+                autoComplete='name'
                 name="userName"
                 handleChange={onInputChange}
             />
@@ -60,7 +61,8 @@ function Contact() {
                 type="email"
                 label="Digite seu email:"
                 placeholder="Insira seu email"
-                value={userData.userName}
+                value={userData.userEmail}
+                autoComplete='email'
                 name="userEmail"
                 handleChange={onInputChange}
             />

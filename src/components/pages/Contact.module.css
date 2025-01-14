@@ -1,8 +1,5 @@
 .top {
-	height: 40vh;
-
-	padding-inline: 1rem;
-	padding-top: 4rem;
+	padding: 4rem 1rem 2.5rem;
 
 	text-align: left;
 }

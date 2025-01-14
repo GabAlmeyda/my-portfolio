@@ -8,6 +8,6 @@ body.contact_bg {
     background-color: var(--bg-color-alt);
 }
 body.notFound_bg {
-    background-color: rgb(27, 27, 27);
+    background: var(--bg-color-alt) linear-gradient(to bottom, rgb(0, 0, 15) 20%, var(--bg-color-alt)) fixed;
 }
 

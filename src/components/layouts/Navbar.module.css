@@ -54,24 +54,24 @@
 
     z-index: 10; 
 }
-ul li {
+.navbar ul li {
     margin-bottom: .7rem;
     padding: .3rem;
 
     text-align: end;
 }
-ul li * {
+.navbar ul li * {
 
     font-size: 2em;
     color: #fff;
 }
-ul li:last-child {
+.navbar ul li:last-child {
     border-radius: 15px;
 
     background-color: var(--acc-color-1);
 }
 
-ul.visible {
+.navbar ul.visible {
     display: flex;
 
     position: relative;
@@ -79,6 +79,6 @@ ul.visible {
     height: 100vh;
 }
 
-ul.hidden {
+.navbar ul.hidden {
     display: none;
 }

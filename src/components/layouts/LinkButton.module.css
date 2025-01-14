@@ -1,9 +1,7 @@
 .btn_container {
-    text-align: center;
-}
+    width: 100%;
 
-.important {
-    margin-top: 6rem;
+    text-align: center;
 }
 
 .btn {
@@ -26,7 +24,7 @@
     transform: scale(1);
 }
 
-.btn :hover * {
+.btn:hover * {
     color: lightgray;
 }
 .btn:active * {
@@ -36,4 +34,20 @@
 .btn * {
     color: white;
     font-size: 1.3rem;
+}
+
+/* Custom Classes*/
+
+.important {
+    margin-top: 6rem;
+}
+
+.orangeColor .btn {
+    background-color: var(--acc-color-2);
+}
+.orangeColor .btn:hover {
+    background-color: var(--acc-color-2_hover);
+}
+.orangeColor .btn:active {
+    background-color: var(--acc-color-2_active);
 }

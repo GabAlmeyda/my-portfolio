@@ -17,7 +17,7 @@ function Header() {
         <p>Sou desenvolvedor full-stack e estou pronto para qualquer desafio.</p>
 
         <div className={styles.icons_container}>
-            <a href='#' rel='noopener noreferrer' target='_blank'><AiFillInstagram /></a>
+            <a href='https://www.instagram.com/gab.almeyda/' rel='noopener noreferrer' target='_blank'><AiFillInstagram /></a>
             <a href='#' rel='noopender noreferre' target='_blank'><AiFillLinkedin /></a>
         </div>
 

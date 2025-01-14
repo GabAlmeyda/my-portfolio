@@ -35,7 +35,7 @@ function ChangeBgColor() {
 			}
 		});
 
-		if (!found) body.classList.add("not-found_bg");
+		if (!found) body.classList.add("notFound_bg");
 	}, [location.pathname]);
 }
 
