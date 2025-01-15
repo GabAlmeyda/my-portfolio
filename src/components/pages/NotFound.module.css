@@ -1,8 +1,4 @@
 .notFound_container {
-	display: flex;
-	align-items: center;
-	flex-flow: column wrap;
-
 	padding: 1rem;
 	padding-bottom: 4rem;
 
@@ -56,4 +52,5 @@
 
 .notFound_container p:last-of-type span {
 	color: var(--acc-color-2);
+	font-size: 1em;
 }

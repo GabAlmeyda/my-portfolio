@@ -6,6 +6,7 @@ import { useEffect } from 'react'
 
 import Footer from './components/layouts/Footer'
 import Container from './components/layouts/Container'
+import Navbar from './components/layouts/Navbar'
 
 import Home from './components/pages/Home'
 import Contact from './components/pages/Contact'
@@ -14,27 +15,24 @@ import NotFound from './components/pages/NotFound'
 
 function ChangeBgColor() {
 	const location = useLocation();
-	const pagesBgColors = {
-		'/my-portfolio': "home_bg",
-		'/my-portfolio/projects': "projects_bg",
-		'/my-portfolio/contact': "contact_bg"
-	};
-	const body = document.body;
 
+	const BackgroundClasses = ["home_bg", "projects_bg", "contact_bg", "notFound_bg"];
+	const pages = ['/my-portfolio', '/my-portfolio/projects', '/my-portfolio/contact'];
+
+	const body = document.body;
 	useEffect(() => { 
 		let found = false;
 
-		Object.values(pagesBgColors).forEach(pageClass => {
+		BackgroundClasses.forEach(pageClass => {
 			body.classList.remove(pageClass);
 		});
 
-		Object.keys(pagesBgColors).forEach(pathname => {
+		pages.forEach((pathname, index) => {
 			if (pathname === location.pathname) {
-				body.classList.add(pagesBgColors[pathname]);
+				body.classList.add(BackgroundClasses[index]);
 				found = true;
 			}
 		});
-
 		if (!found) body.classList.add("notFound_bg");
 	}, [location.pathname]);
 }
@@ -43,6 +41,8 @@ function App() {
 
 	return (<Router>
 		<ChangeBgColor />
+
+        <Navbar />
 
 		<Container>
 			<Routes>

@@ -8,8 +8,6 @@ import pageNotFound from '../../images/pageNotFound.png'
 function NotFound() {
 
     return (<>
-        <Navbar />
-
         <div className={styles.notFound_container}>
             <img src={pageNotFound} alt="Página não encontrada"/>
             <h1>Ops! Parece que essa página não existe!</h1>

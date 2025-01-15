@@ -39,14 +39,12 @@ function Contact() {
     }
 
     return (<div className={styles.contact}>
-        <Navbar />
-
         <div className={styles.top}>
             <h1>Faça a solicitação do seu projeto</h1>
             <p>Preencha os campos abaixo e envie sua ideia para eu ajudar:</p>
         </div>
 
-        <Form>
+        <Form handleSubmit={onSubmitClick}>
             <Input
                 type="text"
                 label="Digite seu nome:"
@@ -86,7 +84,6 @@ function Contact() {
             <SubmitButton
                 text='Enviar'
                 type='submit'
-                handleClick={onSubmitClick}
             />
         </Form>
         

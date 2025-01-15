@@ -37,8 +37,18 @@
     margin-top: -.5rem;
     margin-bottom: .7rem;
 
-    color: var(--acc-color-2);
+    height: 1px;
+
+    border-color: var(--acc-color-2);
+
     background-color: var(--acc-color-2);
+
+    color: var(--acc-color-2);
+}
+
+.project:not(.full_card) {
+    user-select: none;
+    cursor: pointer;
 }
 
 .project:not(.full_card) .children {
@@ -54,6 +64,51 @@
     color: rgb(180, 180, 180);
     text-overflow: ellipsis;
     overflow: hidden;
+}
+
+.btn_container {
+    width: 100%;
+
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+
+    text-align: center;
+}
+
+.btn_container button {
+    width: clamp(250px, 70%, 300px);
+
+    padding: .4rem 1rem;
+    border: none;
+    border-radius: 25px;
+
+    background-color: var(--acc-color-2);
+
+    font-weight: 600;
+    color: black;
+    font-size: 1.1em;
+
+    transition: .2s;
+}
+.btn_container button:hover {
+    background-color: var(--acc-color-2_hover);
+    transform: scale(1.03);
+}
+.btn_container button:active {
+    background-color: var(--acc-color-2_active);
+    transform: scale(1);
+}
+
+.btn_container button:hover * {
+    color: lightgray;
+}
+.btn_container button:active * {
+    color: gray;
+}
+
+.btn_container button * {
+    color: white;
+    font-size: 1.3rem;
 }
 
 /* Card of the Projects Component (bigger)*/
