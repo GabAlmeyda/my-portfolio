@@ -28,7 +28,7 @@ function ChangeBgColor() {
 		});
 
 		pages.forEach((pathname, index) => {
-			if (pathname === location.pathname) {
+			if (pathname === location.pathname || pathname === location.pathname + "/") {
 				body.classList.add(BackgroundClasses[index]);
 				found = true;
 			}
