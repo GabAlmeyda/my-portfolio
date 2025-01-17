@@ -1,0 +1,21 @@
+.message_container {
+	padding: 1rem;
+}
+
+.message_container > * {	
+	text-align: center;
+}
+
+.message_container h2 {
+	margin-top: 2rem;
+	margin-bottom: 3rem;
+	
+	font-size: 1.8em;
+	color: var(--acc-color-2);
+}
+
+.message_container p {
+	margin-bottom: 1rem;
+	
+	font-size: 1.1em;
+}

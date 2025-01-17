@@ -28,7 +28,6 @@ function ChangeBgColor() {
 		});
 
 		pages.forEach((pathname, index) => {
-			console.log(location.pathname + "/");	
 			if (pathname === location.pathname || pathname + "/" === location.pathname) {
 				body.classList.add(BackgroundClasses[index]);
 				found = true;
@@ -43,7 +42,7 @@ function App() {
 	return (<Router>
 		<ChangeBgColor />
 
-        <Navbar />
+		<Navbar />
 
 		<Container>
 			<Routes>
@@ -54,7 +53,7 @@ function App() {
 			</Routes>
 		</Container>
 
-		<Footer />
+			<Footer />
 	</Router>)
 }
 
