@@ -16,7 +16,7 @@ function Contact() {
         category: "",
         desc: ""
     });
-    const [successfulForm, setSuccessfulForm] = useState(true);
+    const [successfulForm, setSuccessfulForm] = useState(false);
 
     const projectTypes = ["Landing Page", "E-commerce", "Single Page Application (SPA)", "Dashboards", "Blogs"];
 
@@ -54,7 +54,7 @@ function Contact() {
            console.log(data);
         }
        catch (err) {
-           console.error(err);
+           console.error("An error occurred: ", err);
            return false;
         }
 

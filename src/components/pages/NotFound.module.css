@@ -6,7 +6,7 @@
 }
 
 .notFound_container img {
-	width: clamp(300px, 100%, 500px);
+	width: clamp(200px, 80%, 400px);
 }
 
 .notFound_container h1 {

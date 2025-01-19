@@ -14,7 +14,7 @@ function Home() {
     const navigate = useNavigate();
 
     function onProjectClick(e) {
-        navigate("/my-portfolio/projects", { state: { id: e.currentTarget.id } });
+        navigate("/my-portfolio/projects", { state: { scrollTo: e.currentTarget.id } });
     }
 
     return (<>

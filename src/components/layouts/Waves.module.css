@@ -1,0 +1,71 @@
+.waves {
+	position: absolute;
+	bottom: 0;
+
+	overflow: hidden;
+
+    width: 100%;
+
+	margin-inline: 0;
+}
+
+.waves > img {
+    position: absolute;
+    bottom: 0;
+
+	width: 100%;
+	object-fit: cover;
+}
+
+
+/* Home Waves' styles*/
+.waves.header {height: 20vh;}
+
+.header :nth-child(1) {
+	z-index: 1;
+
+	height: 22vh;
+}
+.header :nth-child(2) {
+	z-index: 2;
+
+	height: 18vh;
+}
+.header :nth-child(3) {
+	z-index: 3;
+
+	height: 16vh;
+
+	transform: scaleX(-1);
+}
+.header :nth-child(4) {
+	z-index: 4;
+
+	height: 16vh;
+}
+
+
+/* Navbar waves' styles*/
+.waves.navbar {height: 30vh;}
+
+.navbar :nth-child(1) {
+	z-index: 2;
+
+	height: 21vh;
+	color: #e42200;
+}
+.navbar :nth-child(2) {
+	z-index: 1;
+
+	height: 30vh;
+}
+.navbar :nth-child(3) {
+	z-index: 4;
+
+	height: 17vh;
+}
+.navbar :nth-child(4) {
+	z-index: 3;
+
+	height: 20vh;
+}

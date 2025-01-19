@@ -3,9 +3,11 @@ import { useState, useEffect } from 'react';
 
 import styles from './Navbar.module.css'
 
+import logo from '/logo.webp'
+
 import { AiOutlineMenuFold, AiOutlineMenuUnfold } from "react-icons/ai";
 
-import logo from '/logo.webp'
+import Waves from './Waves';
 
 function Navbar() {
     const navigate = useNavigate();
@@ -24,15 +26,23 @@ function Navbar() {
         }
         else {
             const section = document.getElementById(sectionId);
-            if (section) section.scrollIntoView({ behavior: "smooth" });
+            if (section) {
+
+                /*There is some kind of problem here that this behavior only works if we set the Scroll Margin Top to a high value*/
+                section.style.scrollMarginTop = "calc(100vh + 80px)";
+                section.scrollIntoView({ behavior: "smooth" })
+            }
         }
     }
     useEffect(() => {
         if (location.state?.scrollTo) {
             const section = document.getElementById(location.state.scrollTo);
-            if (section) section.scrollIntoView({ behavior: "smooth" });
+            if (section) {
+                section.style.scrollMarginTop = "50px";
+                section.scrollIntoView({ behavior: "smooth" })
+            }
         }
-    }, [location])
+    }, [location.pathname]);
 
     useEffect(() => {
         if (isMenuVisible) {
@@ -86,6 +96,8 @@ function Navbar() {
                 </li>
             </ul>
         </nav>
+
+        {isMenuVisible && <Waves type="navbar" />}
     </>)
 }
 

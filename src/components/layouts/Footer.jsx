@@ -1,14 +1,23 @@
 import { useEffect, useState } from 'react';
 import styles from './Footer.module.css'
-import { useLocation } from 'react-router-dom';
 
 function Footer() {
     const [isFullPage, setIsFullPage] = useState(false);
-    const location = useLocation();
 
     useEffect(() => {
-        setIsFullPage(document.body.classList.contains("full_page"));
-     }, [location.pathname]);
+        const body = document.body;
+
+        const updateState = () => setIsFullPage(body.classList.contains("full_page"));
+
+        updateState();
+
+        const observer = new MutationObserver(updateState);
+        observer.observe(body, { attributes: true, attributeFilter: ["class"] })
+        
+        return () => {
+            observer.disconnect();
+        }
+    }, [])
 
 
     return (<footer className={`${styles.footer} ${isFullPage && styles.full_page}`}>

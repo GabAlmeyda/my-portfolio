@@ -1,7 +1,6 @@
 import styles from './NotFound.module.css'
 
 import LinkButton from '../layouts/LinkButton'
-import Navbar from '../layouts/Navbar'
 
 import pageNotFound from '../../images/pageNotFound.png'
 

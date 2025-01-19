@@ -10,9 +10,12 @@ function Projects() {
     const location = useLocation();
 
     useEffect(() => {
-        if (location.state?.id) {
-            const project = document.getElementById(location.state?.id);
-            project.scrollIntoView({ behavior: "smooth" });
+        if (location.state?.scrollTo) {
+            const project = document.getElementById(location.state?.scrollTo);
+            if (project) {
+                project.style.scrollMarginTop = "50px";
+                project.scrollIntoView({ behavior: "smooth" });
+            }
         }
     }, [location.pathname])
 

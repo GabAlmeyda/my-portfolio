@@ -12,6 +12,10 @@
 }
 .center {
     align-items: center;
+
+}
+.center > *:last-child {
+    margin-inline: auto;
 }
 
 .row {

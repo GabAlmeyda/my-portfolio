@@ -47,6 +47,7 @@ html, body, #root {
   scrollbar-width: thin;
   scrollbar-color: var(--acc-color-2) transparent;
 
+  scroll-margin-top: 200px;
 
   color: var(--font-color);
 }

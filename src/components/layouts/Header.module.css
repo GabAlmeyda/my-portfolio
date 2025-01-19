@@ -1,11 +1,11 @@
 .header {
     position: relative;
 
-    height: 100vh;
+    height: 90vh;
 
     background-color: var(--bg-color-alt);
 }
-.header > *:not(nav, .linkButton) {
+.header > *:not(nav, .link_button_container, .waves) {
     margin-inline: 1rem;
 }
 
@@ -17,9 +17,35 @@
     font-weight: 500;
 }
 .header h1 > span {
+    position: relative;
+    
     font-size: 2.1rem;
     font-weight: 600;
     color: var(--acc-color-2);
+}
+.header h1 > span::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 3px;
+
+    width: 0;
+    height: 3px;
+
+    background-color: var(--acc-color-2);
+
+    transition: none;
+    animation: nameSpan 1s 0.5s ease-out forwards;
+}
+@keyframes nameSpan {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
 
 .icons_container {
@@ -36,4 +62,52 @@
 }
 .icons_container svg:hover {
     transform: scale(1.1);
+}
+
+
+.link_button_container {
+    position: absolute;
+    bottom: clamp(15vh, 20vh, 35vh);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    width: 100%;
+
+    transition: all .2s ease-out;
+}
+.link_button_container:hover {
+    transform: scale(1.05);
+}
+
+.link_button__circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link_button__circle img {
+    width: clamp(250px, 60%, 300px);
+
+    animation: hero-image 15s linear infinite;
+}
+@keyframes hero-image {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.link_button__btn {
+    position: absolute;
+
+    display: block;
+
+    width: 100%;
 }

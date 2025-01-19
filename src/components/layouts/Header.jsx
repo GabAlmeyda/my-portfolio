@@ -2,8 +2,11 @@ import styles from './Header.module.css'
 
 import { AiFillLinkedin, AiFillInstagram } from 'react-icons/ai'
 
-import Navbar from './Navbar'
+import tecCircle from '../../images/tec-circle.png'
+
 import LinkButton from './LinkButton'
+import Waves from './Waves'
+
 
 function Header() {
 
@@ -24,7 +27,20 @@ function Header() {
             </a>
         </div>
 
-        <LinkButton to="/my-portfolio/contact" text="Contate-me" customClass="important" />
+        <div className={styles.link_button_container}>
+            <span className={styles.link_button__circle}>
+                <img src={tecCircle
+                
+                } alt="Círculo tecnológico" />
+            </span>
+           
+            <span className={styles.link_button__btn}>
+                <LinkButton to="/my-portfolio/contact" text="Contate-me" />
+            </span>
+        </div>
+
+        <div className={styles.waves}><Waves type="header"/></div>
+
     </header>)
 }
 
