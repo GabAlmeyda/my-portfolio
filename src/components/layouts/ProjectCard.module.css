@@ -75,7 +75,9 @@
     text-align: center;
 }
 
-.btn_container button {
+.btn_container a {
+    display: inline-block;
+
     width: clamp(250px, 70%, 300px);
 
     padding: .4rem 1rem;
@@ -90,23 +92,23 @@
 
     transition: .2s;
 }
-.btn_container button:hover {
+.btn_container a:hover {
     background-color: var(--acc-color-2_hover);
     transform: scale(1.03);
 }
-.btn_container button:active {
+.btn_container a:active {
     background-color: var(--acc-color-2_active);
     transform: scale(1);
 }
 
-.btn_container button:hover * {
+.btn_container a:hover * {
     color: lightgray;
 }
-.btn_container button:active * {
+.btn_container a:active * {
     color: gray;
 }
 
-.btn_container button * {
+.btn_container a * {
     color: white;
     font-size: 1.3rem;
 }

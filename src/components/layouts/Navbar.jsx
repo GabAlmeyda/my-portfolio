@@ -56,7 +56,7 @@ function Navbar() {
 
     return (<>
         <nav className={styles.navbar} aria-label='Navegação principal'>
-            <div className={styles.logo}>
+            <div className={styles.logo} onClick={() => {if (isMenuVisible) toggleMenuVisibility()}}>
                 <Link to="/my-portfolio">
                     <img src={logo} alt="Gabriel Almeyda" />
                 </Link>

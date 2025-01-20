@@ -10,11 +10,17 @@ import navbarWave_2 from '../../images/waves/navbar-wave(2).svg'
 import navbarWave_3 from '../../images/waves/navbar-wave(3).svg'
 import navbarWave_4 from '../../images/waves/navbar-wave(4).svg'
 
+import footerWave_1 from '../../images/waves/footer-wave(1).svg'
+import footerWave_2 from '../../images/waves/footer-wave(2).svg'
+import footerWave_3 from '../../images/waves/footer-wave(3).svg'
+import footerWave_4 from '../../images/waves/footer-wave(4).svg'
+
 function Waves({ type }) {
 
 	const objWaves = {
 		header: [headerWave_1, headerWave_2, headerWave_3, headerWave_4],
-		navbar: [navbarWave_1, navbarWave_2,navbarWave_3, navbarWave_4]
+		navbar: [navbarWave_1, navbarWave_2, navbarWave_3, navbarWave_4],
+		footer: [footerWave_1, footerWave_2, footerWave_3, footerWave_4]
 	}
 
 	return (<>
@@ -26,9 +32,7 @@ function Waves({ type }) {
 				<img src={objWaves[type][3]} />
 			</div>
 		) : 
-			console.error(`Error in 'Waves' component. 
-				Wave type is ${type}.
-				Wave list is ${objWaves[type]}`)
+			console.error(`Error in 'Waves' component: \n\nWave type is ${type}. \nWave list is ${objWaves[type]}`)
 		}
 
 	</>)

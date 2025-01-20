@@ -18,7 +18,7 @@ function Header() {
         <p>Sou desenvolvedor full-stack e estou pronto para qualquer desafio.</p>
 
         <div className={styles.icons_container}>
-            <a href='https://www.instagram.com/gab.almeyda/' rel='noopener noreferrer' target='_blank'>
+            <a href='https://www.instagram.com/gabriel.almeyda_/' rel='noopener noreferrer' target='_blank'>
                 <AiFillInstagram />
             </a>
 
@@ -27,17 +27,7 @@ function Header() {
             </a>
         </div>
 
-        <div className={styles.link_button_container}>
-            <span className={styles.link_button__circle}>
-                <img src={tecCircle
-                
-                } alt="Círculo tecnológico" />
-            </span>
-           
-            <span className={styles.link_button__btn}>
-                <LinkButton to="/my-portfolio/contact" text="Contate-me" />
-            </span>
-        </div>
+        <div className={styles.link_button}><LinkButton to="/my-portfolio/contact" text="Contate-me" /></div>
 
         <div className={styles.waves}><Waves type="header"/></div>
 

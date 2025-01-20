@@ -64,50 +64,6 @@
     transform: scale(1.1);
 }
 
-
-.link_button_container {
-    position: absolute;
-    bottom: clamp(15vh, 20vh, 35vh);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    overflow: hidden;
-
-    width: 100%;
-
-    transition: all .2s ease-out;
-}
-.link_button_container:hover {
-    transform: scale(1.05);
-}
-
-.link_button__circle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.link_button__circle img {
-    width: clamp(250px, 60%, 300px);
-
-    animation: hero-image 15s linear infinite;
-}
-@keyframes hero-image {
-    from {
-        transform: rotate(0);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.link_button__btn {
-    position: absolute;
-
-    display: block;
-
-    width: 100%;
+.link_button {
+    margin-top: clamp(10vh, 15vh, 25vh);
 }

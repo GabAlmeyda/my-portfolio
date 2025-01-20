@@ -1,5 +1,8 @@
 import { useEffect, useState } from 'react';
+
 import styles from './Footer.module.css'
+
+import Waves from '../layouts/Waves'
 
 function Footer() {
     const [isFullPage, setIsFullPage] = useState(false);
@@ -21,6 +24,8 @@ function Footer() {
 
 
     return (<footer className={`${styles.footer} ${isFullPage && styles.full_page}`}>
+        <div className={styles.waves}><Waves type="footer" /></div>
+
         <p><small>Gabriel Almeyda &copy; 2024. Todos os direitos reservados</small></p>
     </footer>)
 }

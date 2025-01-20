@@ -37,7 +37,7 @@ function ProjectCard({ name, img, link, langs, customClass, handleClick, id, chi
             </Container>
             <div className={styles.btn_container}>
                 <a href={link} target='_blank' rel='noopener noreferre'>
-                    <button onClick={(e) => e.preventDefault()}>Conheça o projeto</button>
+                    Conheça o projeto
                 </a>
             </div>
         </>)}
