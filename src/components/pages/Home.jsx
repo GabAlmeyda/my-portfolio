@@ -5,10 +5,12 @@ import { useNavigate } from 'react-router-dom'
 import Header from '../layouts/Header'
 import Section from '../layouts/Section'
 import Container from '../layouts/Container'
-
-import LanguageCards from '../cards/LanguageCards'
 import ProjectCard from '../layouts/ProjectCard'
 import LinkButton from '../layouts/LinkButton'
+
+import LanguageCards from '../cards/LanguageCards'
+
+import scrollToTop from '../functions/ScrollToTop'
 
 function Home() { 
     const navigate = useNavigate();
@@ -16,6 +18,8 @@ function Home() {
     function onProjectClick(e) {
         navigate("/my-portfolio/projects", { state: { scrollTo: e.currentTarget.id } });
     }
+
+    scrollToTop();
 
     return (<>
         <Header />
@@ -54,7 +58,11 @@ function Home() {
                 </ProjectCard>
             </Container>
 
-            <LinkButton text="Veja meus projetos" to="/my-portfolio/projects" customClass="important" />
+            <LinkButton
+                text="Veja meus projetos"
+                to="/my-portfolio/projects"
+                customClass="important"
+            />
         </Section>
  
         <Section id="contact" customClass={styles.contact}>
@@ -62,7 +70,11 @@ function Home() {
                 <h2>Precisa de algum serviço?</h2>
                 <p>O seu site com segurança, eficiência e modernidade, tudo num lugar só.</p>
     
-                <LinkButton to="/my-portfolio/contact" text="Contate-me" customClass="important" />
+                <LinkButton
+                    to="/my-portfolio/contact"
+                    text="Contate-me"
+                    customClass="important"
+                />
             </div>
         </Section>
         

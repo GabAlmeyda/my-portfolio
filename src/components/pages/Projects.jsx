@@ -1,9 +1,12 @@
+import { useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
+
 import styles from './Projects.module.css'
+
+import scrollToTop from '../functions/ScrollToTop'
 
 import ProjectCard from '../layouts/ProjectCard'
 import Container from '../layouts/Container'
-import { useLocation } from 'react-router-dom'
-import { useEffect } from 'react'
 
 function Projects() {
 
@@ -17,7 +20,9 @@ function Projects() {
                 project.scrollIntoView({ behavior: "smooth" });
             }
         }
-    }, [location.pathname])
+    }, [location.pathname]);
+
+    scrollToTop();
 
     // This object is composed of the project name as key and the languages used as value. Each language must be written the same way they are written in the 'devLangs' array.
     const projectLangs = {

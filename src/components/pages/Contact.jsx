@@ -2,6 +2,8 @@ import styles from './Contact.module.css'
 
 import { useState } from 'react'
 
+import scrollToTop from '../functions/ScrollToTop'
+
 import Input from '../form/Input'
 import Select from '../form/Select'
 import Textarea from '../form/Textarea'
@@ -17,6 +19,8 @@ function Contact() {
         desc: ""
     });
     const [successfulForm, setSuccessfulForm] = useState(false);
+
+    scrollToTop();
 
     const projectTypes = ["Landing Page", "E-commerce", "Single Page Application (SPA)", "Dashboards", "Blogs"];
 
