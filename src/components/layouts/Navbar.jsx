@@ -40,22 +40,16 @@ function Navbar() {
             navigate("/my-portfolio", { state: { scrollTo: sectionId } });
         }
         else {
+            console.log(sectionId);
             const section = document.getElementById(sectionId);
-            if (section) {
-
-                /*There is some kind of problem here that this behavior only works if we set the Scroll Margin Top to a high value*/
-                section.style.scrollMarginTop = "calc(100vh + 80px)";
-                section.scrollIntoView({ behavior: "smooth" })
-            }
+            console.log(section);
+            if (section) section.scrollIntoView({ behavior: "smooth" });
         }
     }
     useEffect(() => {
         if (location.state?.scrollTo) {
             const section = document.getElementById(location.state.scrollTo);
-            if (section) {
-                section.style.scrollMarginTop = "50px";
-                section.scrollIntoView({ behavior: "smooth" })
-            }
+            if (section) section.scrollIntoView({ behavior: "smooth" });
         }
     }, [location.pathname]);
 

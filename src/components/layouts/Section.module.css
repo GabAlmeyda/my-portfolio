@@ -1,4 +1,6 @@
 .section {
+    scroll-margin-top: calc(100vh + 80px);
+
     padding: 1rem;
     padding-block: 3.5rem;
 }

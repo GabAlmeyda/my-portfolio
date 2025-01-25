@@ -2,6 +2,8 @@
 .project {
     width: clamp(300px, 95%, 350px);
 
+    scroll-margin-top: 50px;
+
     border-radius: 15px;
     padding: .5rem;
     margin-inline: auto;
@@ -48,14 +50,15 @@
 
 .project:not(.full_card) {
     user-select: none;
+    -webkit-user-select: none;
     cursor: pointer;
 }
 
 .project:not(.full_card) .children {
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    line-clamp: 4;
     -webkit-line-clamp: 4;
+    line-clamp: 4;
 
     max-height: 30%;
 

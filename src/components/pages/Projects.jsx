@@ -26,10 +26,7 @@ function Projects() {
     useEffect(() => {
         if (location.state?.scrollTo) {
             const project = document.getElementById(location.state?.scrollTo);
-            if (project) {
-                project.style.scrollMarginTop = "50px";
-                project.scrollIntoView({ behavior: "smooth" });
-            }
+            if (project) project.scrollIntoView({ behavior: "smooth" });
         }
     }, [location.pathname]);
 
