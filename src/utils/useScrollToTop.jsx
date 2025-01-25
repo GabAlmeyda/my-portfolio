@@ -4,14 +4,13 @@ import { useLocation } from "react-router-dom"
 /**
  * Scrolls the window to the top of the page if the 'state' does not contain 'scrollTo' property set.
  */
-const scrollToTop = () => {
+const useScrollToTop = () => {
 	const location = useLocation();
 
-	if (location.state?.scrollTo) return null;
-
 	useEffect(() => {
-		window.scrollTo(0, 0);
-	}, []);
+		console.log(location.state?.scrollTo);
+		if (!location.state?.scrollTo) window.scrollTo(0, 0);
+	}, [location]);
 }
 
-export default scrollToTop
+export default useScrollToTop

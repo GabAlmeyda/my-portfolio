@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation} from 'react-router
 import { useEffect } from 'react'
 
 import { animatedHeadings } from './utils/animatedHeadings'
+import useScrollToTop from './utils/useScrollToTop'
 
 import Footer from './components/layouts/Footer'
 import Container from './components/layouts/Container'
@@ -69,12 +70,14 @@ function ChangeBgColor() {
 function Root() {
 	const location = useLocation();
 
+	useScrollToTop();
+
 	// Animate the heading when the page loads.
 	useEffect(() => {
 		const observer = animatedHeadings();
 
-		return () => { if (observer) observer.disconnect(); } ;
-	}, [location.pathname])
+		return () => { if (observer) observer.disconnect(); };
+	}, [location.pathname]);
 
 	return (<>
 		<ChangeBgColor />

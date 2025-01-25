@@ -40,9 +40,7 @@ function Navbar() {
             navigate("/my-portfolio", { state: { scrollTo: sectionId } });
         }
         else {
-            console.log(sectionId);
             const section = document.getElementById(sectionId);
-            console.log(section);
             if (section) section.scrollIntoView({ behavior: "smooth" });
         }
     }

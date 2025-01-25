@@ -2,8 +2,6 @@ import styles from "./Contact.module.css";
 
 import { useState } from "react";
 
-import scrollToTop from "../../utils/scrollToTop";
-
 import Input from "../form/Input";
 import Select from "../form/Select";
 import Textarea from "../form/Textarea";
@@ -36,8 +34,6 @@ function Contact() {
     // A state that controls the visibility of the 'SuccessfulForm' component, 
     // showed when the submission logic of the form is successfully. 
     const [successfulForm, setSuccessfulForm] = useState(false);
-
-    scrollToTop();
 
     const projectTypes = [
         "Landing Page",

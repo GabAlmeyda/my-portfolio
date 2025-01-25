@@ -2,8 +2,6 @@ import styles from './Home.module.css'
 
 import { useNavigate } from 'react-router-dom'
 
-import scrollToTop from '../../utils/scrollToTop'
-
 import Header from '../layouts/Header'
 import Section from '../layouts/Section'
 import Container from '../layouts/Container'
@@ -32,8 +30,6 @@ function Home() {
     function onProjectClick(e) {
         navigate("/my-portfolio/projects", { state: { scrollTo: e.currentTarget.id } });
     }
-
-    scrollToTop();
 
     return (<>
         <Header />
