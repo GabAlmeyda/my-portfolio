@@ -15,8 +15,24 @@ import footerWave_2 from '../../images/waves/footer-wave(2).svg'
 import footerWave_3 from '../../images/waves/footer-wave(3).svg'
 import footerWave_4 from '../../images/waves/footer-wave(4).svg'
 
-function Waves({ type }) {
+/**
+ * Renders a custom wave style for specific components in the layout.
+ * 
+ * @param {string} waveFor - The component where the 'Wave' component 
+ * is called. Possible values are: 
+ * - **header**
+ * - **navbar**
+ * - **footer**
+ * 
+ * @returns {JSX.Element} A JSX element representing a set of four styled waves.
+ * 
+ * @throws Will log an error message to the console if the 'waveFor' property has an invalid value.
+ */
+function Waves({ waveFor }) {
 
+	// This object is composed of pairs key/value. Each key representing the
+	// component where the 'Wave' component is used. Each value is a array of
+	// four images, representing the four different waves.
 	const objWaves = {
 		header: [headerWave_1, headerWave_2, headerWave_3, headerWave_4],
 		navbar: [navbarWave_1, navbarWave_2, navbarWave_3, navbarWave_4],
@@ -24,15 +40,15 @@ function Waves({ type }) {
 	}
 
 	return (<>
-		{objWaves[type] ? (
-			<div className={`${styles.waves} ${styles[type]}`}>
-				<img src={objWaves[type][0]} />
-				<img src={objWaves[type][1]} />
-				<img src={objWaves[type][2]} />
-				<img src={objWaves[type][3]} />
+		{objWaves[waveFor] ? (
+			<div className={`${styles.waves} ${styles[waveFor]}`}>
+				<img src={objWaves[waveFor][0]} />
+				<img src={objWaves[waveFor][1]} />
+				<img src={objWaves[waveFor][2]} />
+				<img src={objWaves[waveFor][3]} />
 			</div>
 		) : 
-			console.error(`Error in 'Waves' component: \n\nWave type is ${type}. \nWave list is ${objWaves[type]}`)
+			console.error(`Error in 'Waves' component: \n\n'waveFor' is ${waveFor}. \nWave list is ${objWaves[waveFor]}`)
 		}
 
 	</>)

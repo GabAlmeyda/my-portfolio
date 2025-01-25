@@ -4,6 +4,13 @@ import LinkButton from '../layouts/LinkButton'
 
 import pageNotFound from '../../images/pageNotFound.png'
 
+/**
+ * Renders the 'Not found' page component.
+ * 
+ * This component is displayed when a user navigates to a URL that does not match any existing page.
+ * 
+ * @returns {JSX.Element} A JSX element displayed for 404 erros.
+ */
 function NotFound() {
 
     return (<>

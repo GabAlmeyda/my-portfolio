@@ -4,6 +4,11 @@ import LinkButton from '../layouts/LinkButton'
 import Container from '../layouts/Container'
 import { useEffect } from 'react'
 
+/**
+ * Renders a message to inform the user that the form submission was successfully.
+ * 
+ * @returns {JSX.Element} A JSX element representing the successfully message for the submission action.
+ */
 function SuccessfulForm() {
 
 	useEffect(() => {

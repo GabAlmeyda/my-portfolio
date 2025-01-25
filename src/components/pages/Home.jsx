@@ -2,6 +2,8 @@ import styles from './Home.module.css'
 
 import { useNavigate } from 'react-router-dom'
 
+import scrollToTop from '../../utils/scrollToTop'
+
 import Header from '../layouts/Header'
 import Section from '../layouts/Section'
 import Container from '../layouts/Container'
@@ -10,11 +12,23 @@ import LinkButton from '../layouts/LinkButton'
 
 import LanguageCards from '../cards/LanguageCards'
 
-import scrollToTop from '../functions/ScrollToTop'
-
+/**
+ * Renders the 'Home' page component.
+ * 
+ * This component is composed into three main sections:
+ * 
+ * - **about me**: A brief introduction about the developer;
+ * - **tools**: A list of tools and technologies used for website development;
+ * - **projects**: A section with two of the best projects. A click on the project card 
+ * will redirect the user to the 'Projects' page component, more especificly to the project part.
+ * - **contact**: contains a button to the 'Contact' page component.
+ * 
+ * @returns {JSX.Element} The JSX element representing the 'Home' page.
+ */
 function Home() { 
     const navigate = useNavigate();
 
+    // set a 'scrollTo' key to the navigated page in the 'state' object, containing the specific part to scroll.
     function onProjectClick(e) {
         navigate("/my-portfolio/projects", { state: { scrollTo: e.currentTarget.id } });
     }
@@ -77,7 +91,6 @@ function Home() {
                 />
             </div>
         </Section>
-        
     </>)
 }
 

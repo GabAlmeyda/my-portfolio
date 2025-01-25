@@ -4,6 +4,9 @@ import {
 } from 'react-icons/io5'
 import { IoIosGitBranch } from "react-icons/io";
 
+// The array that contains all the languages rendered on the 'tools' 
+// section of the 'Home' page. Each object must contain the name of the 
+// language, the icon (as a React Icon component) and the color of the name and icon.
 export const devLangs = [
         { name: "Figma", icon: <IoLogoFigma />, color: "purple" },
         { name: "Git", icon: <IoIosGitBranch />, color: "orangered" },
