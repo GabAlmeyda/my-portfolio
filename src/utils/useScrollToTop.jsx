@@ -8,7 +8,6 @@ const useScrollToTop = () => {
 	const location = useLocation();
 
 	useEffect(() => {
-		console.log(location.state?.scrollTo);
 		if (!location.state?.scrollTo) window.scrollTo(0, 0);
 	}, [location]);
 }

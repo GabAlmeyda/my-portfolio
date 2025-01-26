@@ -19,7 +19,7 @@ import ToolContainer from './ToolContainer'
  * @param {string} name - The title displayed on the card (also the 'alt' text when the image could
  * not be loaded);
  * @param {string} img - The image path;
- * @param {string} [link] - An opcional link to the project site, displayed only if the 'full_card' 
+ * @param {string} [projectLink] - An opcional link to the project site, displayed only if the 'full_card' 
  * custom class is present.
  * @param {Array<string>} [langs] - An opcional  array of language names used;
  * @param {string} [customClass] - The custom class of the 'ProjectCard' component. If the 'full_card'
@@ -34,7 +34,7 @@ import ToolContainer from './ToolContainer'
  * 
  * @returns {JSX.Element} a JSX element representing a custom project card container.
  */
-function ProjectCard({ name, img, link, langs, customClass, handleClick, id, children }) {
+function ProjectCard({ name, img, projectLink, langs, customClass, handleClick, id, children }) {
 
     const fullCard = customClass === "full_card";
 
@@ -65,7 +65,7 @@ function ProjectCard({ name, img, link, langs, customClass, handleClick, id, chi
                 })}
             </Container>
             <div className={styles.btn_container}>
-                <a href={link} target='_blank' rel='noopener noreferre'>
+                <a href={projectLink} target='_blank' rel='noopener noreferre'>
                     Conheça o projeto
                 </a>
             </div>

@@ -9,14 +9,19 @@
     margin-inline: 1rem;
 }
 
-.header h1 > p{
-    margin-top: 4rem;
-    margin-bottom: -10px;
-
+.header h1,
+.header h1 > span:first-child {
     font-size: 1.8rem;
     font-weight: 500;
 }
-.header h1 > span {
+
+.header h1 > span:first-child {
+    display: block;
+
+    margin-top: 4rem;
+    margin-bottom: -10px;
+}
+.header h1 > span:last-child {
     position: relative;
     
     font-size: 2.1rem;

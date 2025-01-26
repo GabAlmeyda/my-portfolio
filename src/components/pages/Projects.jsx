@@ -55,7 +55,7 @@ function Projects() {
                     img="https://picsum.photos/300"
                     langs={projectLangs.projectAmazon}
                     customClass="full_card"
-                    link="https://www.amazon.com.br/ "
+                    projectLink="https://www.amazon.com.br/ "
                     id="projectAmazon"
                 >
                     <p>
@@ -72,7 +72,7 @@ function Projects() {
                     img="https://picsum.photos/400"
                     langs={projectLangs.projectGoogle}
                     customClass="full_card"
-                    link="https://google.com"
+                    projectLink="https://google.com"
                     id="projectGoogle"
                 >
                     <p>
@@ -90,7 +90,7 @@ function Projects() {
                     img="https://picsum.photos/500"
                     langs={projectLangs.projectApple}
                     customClass="full_card"
-                    link="https://apple.com"
+                    projectLink="https://apple.com"
                     id="projectApple"
                 >
                     <p>

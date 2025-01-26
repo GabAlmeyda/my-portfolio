@@ -52,13 +52,9 @@ function Navbar() {
     }, [location.pathname]);
 
     useEffect(() => {
-        if (isMenuVisible) {
-            document.body.style.overflow = "hidden";
-        }
-        else {
-            document.body.style.overflow = "visible";
+        document.body.classList.toggle("hidden", isMenuVisible);
 
-        }
+        return () => document.body.classList.remove("hidden");
     }, [isMenuVisible]);
 
     return (<>
@@ -80,7 +76,7 @@ function Navbar() {
                 )}
             </label>
         
-            <ul className={isMenuVisible ? styles.visible : styles.hidden}
+            <ul className={isMenuVisible ? styles.visible : ''}
                 role='Menu'
             >
                 <li role='menuitem'>

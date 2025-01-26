@@ -20,7 +20,7 @@ function Header() {
 
     return (<header className={styles.header}>
         <h1>
-            <p>Olá, me chamo</p>
+            <span>Olá, me chamo</span>
             <span>Gabriel Almeida</span>.
         </h1>
         <p>Sou desenvolvedor full-stack e estou pronto para qualquer desafio.</p>
