@@ -11,7 +11,7 @@
 
 .header h1,
 .header h1 > span:first-child {
-    font-size: 1.8rem;
+    font-size: 1.2em;
     font-weight: 500;
 }
 
@@ -24,7 +24,7 @@
 .header h1 > span:last-child {
     position: relative;
     
-    font-size: 2.1rem;
+    font-size: 1.5em;
     font-weight: 600;
     color: var(--acc-color-2);
 }
