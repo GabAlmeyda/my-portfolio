@@ -37,13 +37,13 @@
 }
 
 .tool_container span svg{
-    font-size: 3.5rem;
+    font-size: 3em;
 }
 
 .tool_container p {
     margin: 0;
 
-    font-size: 1.5rem;
+    font-size: 1.5em;
     font-weight: 600;
     letter-spacing: 2px;
     font-variant: small-caps;

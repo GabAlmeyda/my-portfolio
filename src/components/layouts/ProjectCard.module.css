@@ -60,8 +60,6 @@
     -webkit-line-clamp: 4;
     line-clamp: 4;
 
-    max-height: 30%;
-
     font-size: .95em;
     line-height: 1.5;
     color: rgb(180, 180, 180);
@@ -137,4 +135,16 @@
 .project.full_card h3 {
     margin-top: 1rem;
     margin-bottom: .3rem;
+}
+
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    .project:not(.full_card) {
+        margin-block: 0;
+    }
+
+    .project.full_card {
+        margin-block: 1.5rem;
+    }
 }

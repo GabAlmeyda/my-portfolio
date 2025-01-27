@@ -49,7 +49,7 @@ function Projects() {
         </div>
 
         <div className={styles.projects_container}>
-            <Container customClass="marginTop">
+            <Container customClass="column marginTop">
                 <ProjectCard
                     name="Projeto Amazon"
                     img="https://picsum.photos/300"

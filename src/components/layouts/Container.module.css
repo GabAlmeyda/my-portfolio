@@ -10,18 +10,28 @@
 .start {
     justify-content: flex-start;
 }
+
 .center {
     align-items: center;
-
-}
-.center > *:last-child {
-    margin-inline: auto;
+    justify-content: center;
 }
 
 .row {
     flex-direction: row;
 }
+.column {
+    flex-direction: column !important;
+}
 
 .marginTop {
     margin-top: 2.5rem;
+}
+
+
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
 }
