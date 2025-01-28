@@ -8,6 +8,7 @@ import logo from '/logo.webp'
 import { AiOutlineMenuFold, AiOutlineMenuUnfold } from "react-icons/ai";
 
 import Waves from './Waves';
+import useViewport from '../../utils/useViewport';
 
 /**
  * Renders a custom &lt;navbar&gt; element.
@@ -29,9 +30,17 @@ function Navbar() {
     const location = useLocation();
     const [isMenuVisible, setIsMenuVisible] = useState(false);
 
+    const viewport = useViewport();
+    const largeScreen = viewport.width >= 1024;
+
     function toggleMenuVisibility() {
-        setIsMenuVisible(!isMenuVisible);
+        if (!largeScreen) setIsMenuVisible(!isMenuVisible);
     }
+    useEffect(() => {
+        if (!largeScreen) document.body.classList.toggle("hidden", isMenuVisible);
+
+        return () => document.body.classList.remove("hidden");
+    }, [isMenuVisible]);
 
     function handleInternalLink(e, sectionId) {
         e.preventDefault();
@@ -50,12 +59,6 @@ function Navbar() {
             if (section) section.scrollIntoView({ behavior: "smooth" });
         }
     }, [location.pathname]);
-
-    useEffect(() => {
-        document.body.classList.toggle("hidden", isMenuVisible);
-
-        return () => document.body.classList.remove("hidden");
-    }, [isMenuVisible]);
 
     return (<>
         <nav className={styles.navbar} aria-label='Navegação principal'>
@@ -76,7 +79,7 @@ function Navbar() {
                 )}
             </label>
         
-            <ul className={isMenuVisible ? styles.visible : ''}
+            <ul className={isMenuVisible && !largeScreen ? styles.visible : ''}
                 role='Menu'
             >
                 <li role='menuitem'>

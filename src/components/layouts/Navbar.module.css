@@ -86,5 +86,60 @@
 
 /* Media Queries */
 @media screen and (min-width: 1024px) {
-    
+    .navbar label {
+        display: none;
+    }
+
+    .navbar ul {
+        display: inline-block;
+
+        position: relative;
+        right: 0;
+
+        width: fit-content;
+
+        padding: 0;
+        margin: 0;
+        margin-top: -.1rem;
+    }
+
+    .navbar ul li {
+        display: inline-block;
+
+        position: relative;
+
+        margin-right: .6rem;
+        margin-bottom: 0;
+
+        font-size: .6rem;
+    }
+    .navbar ul li:not(:last-child)::after {
+        content: "";
+
+        position: absolute;
+        bottom: 0;
+        left: .25rem;
+        right: .25rem;
+
+        height: 2px;
+
+        background-color: var(--font-color);
+
+        transform: scaleX(0);
+        transition: transform .3s ease-out;
+    }
+    .navbar ul li:hover::after {
+        transform: scaleX(1);
+    }
+
+    .navbar ul li:last-child {
+        transition: transform .3s ease-out;
+    }
+    .navbar ul li:last-child:hover {
+        transform: scale(1.05);
+    }
+
+    .navbar ul li a {
+        padding: .3rem .5rem;
+    }
 }
