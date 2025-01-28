@@ -81,3 +81,10 @@
 
     height: 100vh;
 }
+
+
+
+/* Media Queries */
+@media screen and (min-width: 1024px) {
+    
+}

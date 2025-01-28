@@ -6,7 +6,7 @@
 
     background-color: var(--bg-color-alt);
 }
-.header > *:not(nav, .link_button_container, .waves) {
+.header > *:not(nav, .waves) {
     margin-inline: 1rem;
 }
 
@@ -72,4 +72,26 @@
 
 .link_button {
     margin-top: clamp(10vh, 15vh, 25vh);
+}
+
+
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    .header > p {
+        display: inline-block;
+
+        max-width: 400px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        height: 130vh;
+    }
+
+    .link_button {
+        display: flex;
+        justify-content: flex-start;
+    }
 }

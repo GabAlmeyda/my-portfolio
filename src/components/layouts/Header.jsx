@@ -35,9 +35,13 @@ function Header() {
             </a>
         </div>
 
-        <div className={styles.link_button}><LinkButton to="/my-portfolio/contact" text="Contate-me" /></div>
+        <div className={styles.link_button}>
+            <LinkButton to="/my-portfolio/contact" text="Contate-me" />
+        </div>
 
-        <div className={styles.waves}><Waves waveFor="header"/></div>
+        <div className={styles.waves}>
+            <Waves waveFor="header" />
+        </div>
 
     </header>)
 }
