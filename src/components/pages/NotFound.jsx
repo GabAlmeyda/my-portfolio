@@ -14,7 +14,7 @@ import pageNotFound from '../../images/pageNotFound.png'
 function NotFound() {
 
     return (<>
-        <div className={styles.notFound_container}>
+        <main className={styles.notFound_container}>
             <img src={pageNotFound} alt="Página não encontrada"/>
             <h1>Ops! Parece que essa página não existe!</h1>
             <h2>Erro 404 - Página não encontrada</h2>
@@ -24,9 +24,9 @@ function NotFound() {
             <LinkButton
                 to="/my-portfolio"
                 text="Ir para a Home"
-                customClass="orangeColor"
+                customClass="orange_color"
             />
-        </div>
+        </main>
     </>)
 }
 

@@ -89,8 +89,7 @@ function Contact() {
         setSuccessfulForm(true);
     }
 
-    return (
-        <>
+    return (<main>
             {successfulForm ? (
                 <SuccessfulForm />
             ) : (
@@ -147,8 +146,7 @@ function Contact() {
                     </Form>
                 </div>
             )}
-        </>
-    );
+        </main>);
 }
 
 export default Contact;

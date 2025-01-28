@@ -49,12 +49,12 @@
     margin-top: 6rem;
 }
 
-.orangeColor .btn {
+.orange_color .btn {
     background-color: var(--acc-color-2);
 }
-.orangeColor .btn:hover {
+.orange_color .btn:hover {
     background-color: var(--acc-color-2_hover);
 }
-.orangeColor .btn:active {
+.orange_color .btn:active {
     background-color: var(--acc-color-2_active);
 }

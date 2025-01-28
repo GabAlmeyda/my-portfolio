@@ -8,7 +8,6 @@ import { animatedHeadings } from './utils/animatedHeadings'
 import useScrollToTop from './utils/useScrollToTop'
 
 import Footer from './components/layouts/Footer'
-import Container from './components/layouts/Container'
 import Navbar from './components/layouts/Navbar'
 
 import Home from './components/pages/Home'
@@ -21,7 +20,7 @@ import NotFound from './components/pages/NotFound'
  * 'app.css' background classes.
  * 
  * This component uses the 'useLocation' hook to detect the current 
- * pathname and updates the &lt;body&gt;	 element's class accordingly.
+ * pathname and updates the &lt;body&gt; element's class accordingly.
  * 
  * @returns {null} This component does not return anything, is used 
  * only for change the background color of the page.
@@ -79,22 +78,20 @@ function Root() {
 		return () => { if (observer) observer.disconnect(); };
 	}, [location.pathname]);
 
-	return (<>
+	return (<div className='app_wrapper'>
 		<ChangeBgColor />
 
 		<Navbar />
 
-		<Container>
 			<Routes>
 				<Route path='/my-portfolio' element={ <Home /> } />
 				<Route path='/my-portfolio/projects' element={ <Projects /> } />
 				<Route path='/my-portfolio/contact' element={ <Contact /> } />
 				<Route path='*' element={ <NotFound /> } />
 			</Routes>
-		</Container>
 
 		<Footer />
-	</>)
+	</div>)
 }
 
 /**

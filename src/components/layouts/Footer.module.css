@@ -1,7 +1,6 @@
 .footer {
     position: relative;
     bottom: 0;
-    background-color: var(--acc-color-2);
 }
 
 .waves {
@@ -15,9 +14,7 @@
     padding-inline: 1rem;
     padding-bottom: 1rem;
 
-    text-align: center;
-}
+    background-color: var(--acc-color-2);
 
-.full_page {
-    position: absolute;
+    text-align: center;
 }

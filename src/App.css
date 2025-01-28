@@ -1,3 +1,14 @@
+.app_wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+
 body.home_bg {
     background-color: var(--bg-color-alt);
 }
@@ -10,7 +21,6 @@ body.contact_bg {
 body.notFound_bg {
     background: var(--bg-color-alt) linear-gradient(to bottom, rgb(0, 0, 15) 20%, var(--bg-color-alt)) fixed;
 }
-
 body.hidden {
     overflow: hidden;
 }

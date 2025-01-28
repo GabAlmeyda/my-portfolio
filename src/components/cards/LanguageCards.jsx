@@ -11,7 +11,7 @@ import ToolContainer from "../layouts/ToolContainer";
  */
 function LanguageCards() {
 
-    return (<Container customClass="marginTop">
+    return (<Container customClass="margin_top">
         {devLangs.map(lang => (
             <ToolContainer key={lang.name} {...lang} />
         ))}
