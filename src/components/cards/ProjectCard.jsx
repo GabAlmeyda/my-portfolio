@@ -2,8 +2,8 @@ import { devLangs } from '../../data/devLanguages'
 
 import styles from './ProjectCard.module.css'
 
-import Container from './Container'
-import ToolContainer from './ToolContainer'
+import Container from '../layouts/Container'
+import ToolContainer from '../layouts/ToolContainer'
 
 /**
  * Renders a customizable card to display projects.

@@ -1,4 +1,5 @@
 .section {
+
     /* 
     Fixes an issue where scrolling lands the user to the bottom
     of the section. '100vh + 30px' ensures that the user is taken to the top 
@@ -9,6 +10,7 @@
 
     padding: 1rem;
     padding-block: 3.5rem;
+    
 }
 
 .section > h2 {

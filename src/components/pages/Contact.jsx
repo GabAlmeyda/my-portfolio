@@ -136,7 +136,7 @@ function Contact() {
 
                         <Textarea
                             placeholder="Descreva seu projeto"
-                            label="Digite sua mensagem"
+                            label="Deixe sua mensagem:"
                             value={userData.desc}
                             name="desc"
                             handleChange={onInputChange}

@@ -12,7 +12,7 @@ import Waves from '../layouts/Waves'
  */
 function Footer() {
     return (<footer className={styles.footer}>
-        <div className={styles.waves}><Waves waveFor="footer" /></div>
+        <div className={styles.waves}><Waves waveFor="footer"/></div>
 
         <p><small>Gabriel Almeyda &copy; 2024. Todos os direitos reservados</small></p>
     </footer>)

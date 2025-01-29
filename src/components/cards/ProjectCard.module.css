@@ -117,6 +117,7 @@
 /* Card of the Projects Component (bigger)*/
 .project.full_card {
     width: 100%;
+    max-width: 900px;
 }
 .project.full_card:hover {
     transform: scale(1.02);
@@ -146,5 +147,11 @@
 
     .project.full_card {
         margin-block: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .project:not(.full_card) {
+        width: clamp(450px, 45vw, 700px);
     }
 }

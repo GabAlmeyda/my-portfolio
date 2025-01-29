@@ -5,10 +5,10 @@ import { useNavigate } from 'react-router-dom'
 import Header from '../layouts/Header'
 import Section from '../layouts/Section'
 import Container from '../layouts/Container'
-import ProjectCard from '../layouts/ProjectCard'
 import LinkButton from '../layouts/LinkButton'
 
 import LanguageCards from '../cards/LanguageCards'
+import ProjectCard from '../cards/ProjectCard'
 
 /**
  * Renders the 'Home' page component.

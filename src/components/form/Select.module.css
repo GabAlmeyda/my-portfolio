@@ -3,7 +3,7 @@
 }
 
 .select_container label {
-	display: inline-block;
+	display: block;
 
 	margin-bottom: .3rem;
 

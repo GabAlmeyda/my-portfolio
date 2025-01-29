@@ -24,7 +24,7 @@
 .header :nth-child(1) {
 	z-index: 1;
 
-	height: calc(100%);
+	height: 100%;
 }
 .header :nth-child(2) {
 	z-index: 2;
@@ -46,33 +46,33 @@
 
 
 /* Navbar waves' styles*/
-.waves.navbar {height: 30vh;}
+.waves.navbar {height: 33vh;}
 
 .navbar :nth-child(1) {
 	z-index: 2;
 
-	height: calc(100% - 20%);
+	height: calc(100% - 30%);
 	color: #e42200;
 }
 .navbar :nth-child(2) {
 	z-index: 1;
 
-	height: calc(100%);
+	height: 100%;
 }
 .navbar :nth-child(3) {
 	z-index: 4;
 
-	height: calc(100% - 40%);
+	height: calc(100% - 50%);
 }
 .navbar :nth-child(4) {
 	z-index: 3;
 
-	height: calc(100% - 30%);
+	height: calc(100% - 35%);
 }
 
 
 /* Footer waves' styles*/
-.waves.footer {height: 22vh;}
+.waves.footer {height: 23vh;}
 
 .footer :nth-child(1) {
 	z-index: 1;
@@ -87,7 +87,7 @@
 .footer :nth-child(3) {
 	z-index: 3;
 
-	height: calc(100% - 30%);
+	height: calc(100% - 40%);
 }
 .footer :nth-child(4) {
 	z-index: 4;
@@ -101,5 +101,9 @@
 @media screen and (min-width: 1024px) {
 	.waves.header {height: 53vh}
 
-	.waves.footer {height: 45vh;}
+	.waves.footer {height: 60vh;}
+}
+
+@media screen and (min-width: 1280px) {
+	.waves.header {height: 60vh}
 }

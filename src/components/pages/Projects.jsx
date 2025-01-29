@@ -3,8 +3,9 @@ import { useEffect } from "react";
 
 import styles from "./Projects.module.css";
 
-import ProjectCard from "../layouts/ProjectCard";
 import Container from "../layouts/Container";
+
+import ProjectCard from "../cards/ProjectCard";
 
 /**
  * Renders the 'Projects' page component.
