@@ -1,4 +1,12 @@
+.gridContainer {
+    display: grid;
+    grid-template-areas: "navbar";
+    grid-template-columns: 1fr;
+}
+
 .navbar {
+    grid-area: navbar;
+
     display: flex;
     justify-content: space-between;
     align-items: center;

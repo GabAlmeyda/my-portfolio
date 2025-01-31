@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import styles from "./Projects.module.css";
 
 import Container from "../layouts/Container";
+import Section from '../layouts/Section'
 
 import ProjectCard from "../cards/ProjectCard";
 
@@ -38,7 +39,7 @@ function Projects() {
         projectApple: ["HTML5", "CSS3", "React"],
     };
 
-    return (<>
+    return (<main>
         <div className={styles.top}>
             <h1>Conheça meus projetos</h1>
 
@@ -49,7 +50,7 @@ function Projects() {
             </p>
         </div>
 
-        <div className={styles.projects_container}>
+        <Section customClass={styles.projects_container}>
             <Container customClass="column margin_top">
                 <ProjectCard
                     name="Projeto Amazon"
@@ -103,8 +104,8 @@ function Projects() {
                     </p>
                 </ProjectCard>
             </Container>
-        </div>
-    </>);
+        </Section>
+    </main>);
 }
 
 export default Projects;

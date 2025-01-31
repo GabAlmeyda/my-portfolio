@@ -2,6 +2,8 @@ import styles from "./Contact.module.css";
 
 import { useState } from "react";
 
+import Section from "../layouts/Section";
+
 import Input from "../form/Input";
 import Select from "../form/Select";
 import Textarea from "../form/Textarea";
@@ -102,48 +104,50 @@ function Contact() {
                         </p>
                     </div>
 
-                    <Form handleSubmit={onSubmitClick}>
-                        <Input
-                            type="text"
-                            label="Digite seu nome:"
-                            placeholder="Insira seu nome"
-                            value={userData.userName}
-                            autoComplete="name"
-                            name="userName"
-                            handleChange={onInputChange}
-                        />
-
-                        <Input
-                            type="email"
-                            label="Digite seu email:"
-                            placeholder="Insira seu email"
-                            value={userData.userEmail}
-                            autoComplete="email"
-                            name="userEmail"
-                            handleChange={onInputChange}
-                        />
-
-                        <Select
-                            label="Escolha a categoria do projeto:"
-                            options={[
-                                ...projectTypes,
-                                "Outra (especifique na descrição)",
-                            ]}
-                            value={userData.category}
-                            name="category"
-                            handleChange={onSelectChange}
-                        />
-
-                        <Textarea
-                            placeholder="Descreva seu projeto"
-                            label="Deixe sua mensagem:"
-                            value={userData.desc}
-                            name="desc"
-                            handleChange={onInputChange}
-                        />
-
-                        <SubmitButton text="Enviar" type="submit" />
-                    </Form>
+                    <Section>
+                        <Form handleSubmit={onSubmitClick}>
+                            <Input
+                                type="text"
+                                label="Digite seu nome:"
+                                placeholder="Insira seu nome"
+                                value={userData.userName}
+                                autoComplete="name"
+                                name="userName"
+                                handleChange={onInputChange}
+                            />
+    
+                            <Input
+                                type="email"
+                                label="Digite seu email:"
+                                placeholder="Insira seu email"
+                                value={userData.userEmail}
+                                autoComplete="email"
+                                name="userEmail"
+                                handleChange={onInputChange}
+                            />
+    
+                            <Select
+                                label="Escolha a categoria do projeto:"
+                                options={[
+                                    ...projectTypes,
+                                    "Outra (especifique na descrição)",
+                                ]}
+                                value={userData.category}
+                                name="category"
+                                handleChange={onSelectChange}
+                            />
+    
+                            <Textarea
+                                placeholder="Descreva seu projeto"
+                                label="Deixe sua mensagem:"
+                                value={userData.desc}
+                                name="desc"
+                                handleChange={onInputChange}
+                            />
+    
+                            <SubmitButton text="Enviar" type="submit" />
+                        </Form>
+                    </Section>
                 </div>
             )}
         </main>);

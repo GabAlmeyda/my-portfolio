@@ -3,7 +3,7 @@
     justify-content: flex-start;
     align-items: center;
 
-    width: clamp(300px, 90%, 700px);
+    width: clamp(300px, 90%, 500px);
 
     border: 2px solid var(--acc-color-1);
     border-radius: 10px;
@@ -69,4 +69,13 @@
 
 .small_card span svg {
     font-size: 3rem;
+}
+
+
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    .tool_container {
+        width: clamp(350px, 45vw, 500px);
+    }
 }

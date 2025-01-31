@@ -1,4 +1,11 @@
+.gridContainer {
+    display: grid;
+    grid-template-areas: "section";
+    grid-template-columns: 1fr;
+}
+
 .section {
+    grid-area: section;
 
     /* 
     Fixes an issue where scrolling lands the user to the bottom
@@ -53,6 +60,11 @@
 
 /* Media Queries */
 @media screen and (min-width: 1024px) {
+    .gridContainer {
+        grid-template-areas: ". section .";
+        grid-template-columns: 1fr 1000px 1fr;
+    }
+
     .section {
         scroll-margin-top: 50px;
     }

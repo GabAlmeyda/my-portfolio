@@ -9,6 +9,7 @@ import { AiOutlineMenuFold, AiOutlineMenuUnfold } from "react-icons/ai";
 
 import Waves from './Waves';
 import useViewport from '../../utils/useViewport';
+import { TbLocationQuestion } from 'react-icons/tb';
 
 /**
  * Renders a custom &lt;navbar&gt; element.
@@ -60,7 +61,7 @@ function Navbar() {
         }
     }, [location.pathname]);
 
-    return (<>
+    return (<div className={styles.gridContainer}>
         <nav className={styles.navbar} aria-label='Navegação principal'>
             <div className={styles.logo} onClick={() => {if (isMenuVisible) toggleMenuVisibility()}}>
                 <Link to="/my-portfolio">
@@ -104,7 +105,7 @@ function Navbar() {
         </nav>
 
         {isMenuVisible && <Waves waveFor="navbar" />}
-    </>)
+    </div>)
 }
 
 export default Navbar

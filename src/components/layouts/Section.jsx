@@ -20,9 +20,11 @@ import styles from './Section.module.css'
  */
 function Section(props) {
 
-    return (<section id={props.id} className={`${styles.section} ${styles.headingAnimation} ${props.customClass} section`}>
-        {props.children}
-    </section>)
+    return (<div className={`${styles.gridContainer} ${props.customClass}`}>
+        <section id={props.id} className={`${styles.section} ${styles.headingAnimation} ${props.customClass} section`}>
+            {props.children}
+        </section>
+    </div>)
 }
 
 export default Section
