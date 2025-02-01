@@ -19,7 +19,7 @@
 	line-height: 1.3;
 }
 .notFound_container h1 + h2 {
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 
 	font-size: 1.1em;
 }
@@ -53,4 +53,31 @@
 .notFound_container p:last-of-type span {
 	color: var(--acc-color-2);
 	font-size: 1em;
+}
+
+
+
+/* Media Queries */
+@media screen and (min-width: 1024px) {
+	.notFound_container {
+		text-align: left;
+	}
+
+	.notFound_container > * {
+		max-width: 50vw;
+	}
+
+	.notFound_container img {
+		position: absolute;
+		top: 5vw;
+		right: 5vw;
+
+		width: clamp(450px, 70vh, 750px);
+	}
+
+	.linkButton {
+		display: flex;
+
+		margin-top: 2rem;
+	}
 }

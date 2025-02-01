@@ -17,7 +17,7 @@ function SuccessfulForm() {
 		return () =>  document.body.classList.remove("full_page")
 	}, [])
 
-	return (<Container customClass={`center ${styles.message_container}`} >
+	return (<Container customClass={`center column ${styles.message_container}`} >
 		<h2>Muito obrigado pelo seu envio!</h2>
 		<p>Fico feliz em ver que confia em mim para resolver seu problema.</p>
 		<p>Estarei enviando uma resposta o mais breve possível, então fique atento!</p>

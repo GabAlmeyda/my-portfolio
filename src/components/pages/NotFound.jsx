@@ -21,11 +21,13 @@ function NotFound() {
             <p>A página que você tentou acessar foi movida, removida ou até mesmo nunca existiu.</p>
 
             <p>Que tal tentar acessar a <span>Home</span>? Garanto que ela existe.</p>
-            <LinkButton
-                to="/my-portfolio"
-                text="Ir para a Home"
-                customClass="orange_color"
-            />
+            <div className={styles.linkButton}>
+                <LinkButton
+                    to="/my-portfolio"
+                    text="Ir para a Home"
+                    customClass="orange_color"
+                />
+            </div>
         </main>
     </>)
 }

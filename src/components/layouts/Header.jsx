@@ -18,25 +18,27 @@ import Waves from './Waves'
  */
 function Header() {
 
-    return (<header className={styles.header}>
-        <h1>
-            <span>Olá, me chamo</span>
-            <span>Gabriel Almeida</span>.
-        </h1>
-        <p>Sou desenvolvedor full-stack e estou pronto para qualquer desafio.</p>
-
-        <div className={styles.icons_container}>
-            <a href='https://www.instagram.com/gabriel.almeyda_/' rel='noopener noreferrer' target='_blank'>
-                <AiFillInstagram />
-            </a>
-
-            <a href='https://www.linkedin.com/in/gabriel-almeyda/' rel='noopender noreferre' target='_blank'>
-                <AiFillLinkedin />
-            </a>
-        </div>
-
-        <div className={styles.link_button}>
-            <LinkButton to="/my-portfolio/contact" text="Contate-me" />
+    return (<header className={styles.header}>  
+        <div className={styles.container}>
+            <h1>
+                <span className='greeting'>Olá, me chamo</span>
+                <span className='name'>Gabriel Almeida</span>
+            </h1>
+            <p>Sou desenvolvedor full-stack e estou pronto para qualquer desafio.</p>
+    
+            <div className={styles.icons_container}>
+                <a href='https://www.instagram.com/gabriel.almeyda_/' rel='noopener noreferrer' target='_blank'>
+                    <AiFillInstagram />
+                </a>
+    
+                <a href='https://www.linkedin.com/in/gabriel-almeyda/' rel='noopender noreferre' target='_blank'>
+                    <AiFillLinkedin />
+                </a>
+            </div>
+    
+            <div className={styles.link_button}>
+                <LinkButton to="/my-portfolio/contact" text="Contate-me" />
+            </div>
         </div>
 
         <div className={styles.waves}>

@@ -73,3 +73,12 @@ a {
 button {
     cursor: pointer;
 }
+
+
+
+/* Media Queries */
+@media screen and (min-width: 1440px) {
+    * {
+        font-size: clamp(1.2rem, 5vw, 1.3rem);
+    }
+}

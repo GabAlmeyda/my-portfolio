@@ -62,6 +62,13 @@
       "userEmail": "gabrielalmeida7258@gmail.com",
       "category": "Blogs",
       "desc": "asdfasdf"
+    },
+    {
+      "id": "b7fa",
+      "userName": "Gabriel Almeida de Lima",
+      "userEmail": "gabrielalmeida7258@gmail.com",
+      "category": "Single Page Application (SPA)",
+      "desc": "Quero um site bem bonito que seja funcional"
     }
   ]
 }

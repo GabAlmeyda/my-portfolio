@@ -76,6 +76,6 @@
 /* Media Queries */
 @media screen and (min-width: 768px) {
     .tool_container {
-        width: clamp(350px, 45vw, 500px);
+        width: clamp(350px, 45vw, 450px);
     }
 }

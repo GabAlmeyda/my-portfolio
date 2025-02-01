@@ -3,8 +3,7 @@
 }
 
 .btn {
-    width: clamp(250px, 60%, 300px);
-
+    padding-inline: 1.5rem;
     border: none;
     border-radius: 25px;
 
@@ -40,7 +39,7 @@
 
 .btn * {
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.3em;
 }
 
 /* Custom Classes*/
