@@ -51,13 +51,13 @@ function Navbar() {
         }
         else {
             const section = document.getElementById(sectionId);
-            if (section) section.scrollIntoView({ behavior: "smooth" });
+            if (section) section.scrollIntoView();
         }
     }
     useEffect(() => {
         if (location.state?.scrollTo) {
             const section = document.getElementById(location.state.scrollTo);
-            if (section) section.scrollIntoView({ behavior: "smooth" });
+            if (section) section.scrollIntoView();
         }
     }, [location.pathname]);
 
@@ -85,14 +85,14 @@ function Navbar() {
             >
                 <li role='menuitem'>
                     <a href='#about' onClick={(e) => {
-                        handleInternalLink(e, "about");
                         toggleMenuVisibility();
+                        handleInternalLink(e, "about");
                     }}>Sobre</a>
                 </li>
                 <li role='menuitem'>
                     <a href='#tools' onClick={(e) => {
-                        handleInternalLink(e, "tools");
                         toggleMenuVisibility();
+                        handleInternalLink(e, "tools");
                     }}>Ferramentas</a>
                 </li>
                 <li role='menuitem'>

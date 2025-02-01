@@ -58,6 +58,8 @@ body,
 #root {
     height: 100vh;
 
+    scroll-behavior: auto;
+
     scrollbar-width: thin;
     scrollbar-color: var(--acc-color-2) transparent;
 
@@ -80,5 +82,16 @@ button {
 @media screen and (min-width: 1440px) {
     * {
         font-size: clamp(1.2rem, 5vw, 1.3rem);
+    }
+}
+
+
+
+/* Animations */
+@media (prefers-reduced-motion: no-preference) {
+    html,
+    body,
+    #root {
+        scroll-behavior: smooth;
     }
 }

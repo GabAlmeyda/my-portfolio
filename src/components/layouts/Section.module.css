@@ -7,13 +7,7 @@
 .section {
     grid-area: section;
 
-    /* 
-    Fixes an issue where scrolling lands the user to the bottom
-    of the section. '100vh + 30px' ensures that the user is taken to the top 
-    of the section. 
-    The additional '50px' is the offset.
-    */
-    scroll-margin-top: calc((100vh + 30px) + 50px);
+    scroll-margin-top: 50px;
 
     padding: 1rem;
     padding-block: 3.5rem;
@@ -43,8 +37,6 @@
     width: 0;
 
     background-color: var(--acc-color-2);
-    transition: width .5s .7s ease-out;
-
 }
 :global(.section > h2.headingAnimation::after) {
     width: 100%;
@@ -64,8 +56,13 @@
         grid-template-areas: ". section .";
         grid-template-columns: 1fr 1000px 1fr;
     }
+}
 
-    .section {
-        scroll-margin-top: 50px;
+
+
+/* Animation */
+@media (prefers-reduced-motion: no-preference) {
+    :global(.section > h2::after) {
+        transition: width .5s .7s ease-out;
     }
 }
