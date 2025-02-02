@@ -13,6 +13,7 @@
 .footer p {
     padding-inline: 1rem;
     padding-bottom: 1rem;
+    margin-top: -1px;
 
     background-color: var(--acc-color-2);
 
