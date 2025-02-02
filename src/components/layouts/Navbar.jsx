@@ -52,12 +52,15 @@ function Navbar() {
         else {
             const section = document.getElementById(sectionId);
             if (section) {
-                // There is a issue with the scroll on internal links when the user is at the 'Home' page.
+
+                // There is a issue with the scroll on internal links when the user is at the 'Home' page
+                // on mobile displays.
                 // When the user scrolls to the section, the view lands below the section.
                 // The '100vh + 30px resolves the problem. The '50px' is the default offset value.
-                section.style.scrollMarginTop = 'calc((100vh + 30px) + 50px)';
-                section.scrollIntoView();
-            }
+                if (!largeScreen) section.style.scrollMarginTop = 'calc((100vh + 30px) + 50px)';
+
+                section.scrollIntoView()
+            };
         }
     }
     useEffect(() => {
