@@ -59,6 +59,10 @@
     margin-top: 1rem;
 }
 
+.icons_container a {
+    -webkit-tap-highlight-color: transparent;
+}
+
 .icons_container svg{
     margin-right: .5rem;
 

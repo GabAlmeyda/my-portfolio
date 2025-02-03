@@ -27,6 +27,7 @@
 .navbar .logo {
     user-select: none;
     -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .navbar .logo img {
@@ -35,6 +36,10 @@
     height: 3.2rem;
 
     border-radius: 50%;
+}
+
+.navbar label {
+    -webkit-tap-highlight-color: transparent;
 }
 
 .navbar label svg {

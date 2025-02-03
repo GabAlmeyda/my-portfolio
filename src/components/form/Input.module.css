@@ -17,7 +17,7 @@
 .input_container input {
 	display: inline-block;
 
-	width: clamp(300px, 95%, 800px);
+	width: clamp(250px, 100%, 800px);
 
 
 	border: 2px solid white;

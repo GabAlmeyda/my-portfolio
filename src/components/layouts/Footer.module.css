@@ -1,6 +1,8 @@
 .footer {
     position: relative;
     bottom: 0;
+
+    margin-top: min(10vh, 10vw);
 }
 
 .waves {
@@ -8,12 +10,12 @@
     bottom: 0;
 
     margin-top: 15vh;
+    border-bottom: none;
 }
 
 .footer p {
     padding-inline: 1rem;
     padding-bottom: 1rem;
-    margin-top: -1px;
 
     background-color: var(--acc-color-2);
 
