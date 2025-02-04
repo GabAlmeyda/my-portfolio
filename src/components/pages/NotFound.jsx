@@ -23,7 +23,7 @@ function NotFound() {
             <p>Que tal tentar acessar a <span>Home</span>? Garanto que ela existe.</p>
             <div className={styles.linkButton}>
                 <LinkButton
-                    to="/my-portfolio"
+                    to="/"
                     text="Ir para a Home"
                     customClass="orange_color"
                 />

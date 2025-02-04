@@ -28,7 +28,7 @@ function Home() {
 
     // set a 'scrollTo' key to the navigated page in the 'state' object, containing the specific part to scroll.
     function onProjectClick(e) {
-        navigate("/my-portfolio/projects", { state: { scrollTo: e.currentTarget.id } });
+        navigate("/projects", { state: { scrollTo: e.currentTarget.id } });
     }
 
     return (<>
@@ -71,7 +71,7 @@ function Home() {
     
                 <LinkButton
                     text="Veja meus projetos"
-                    to="/my-portfolio/projects"
+                    to="/projects"
                     customClass="important"
                 />
             </Section>
@@ -82,7 +82,7 @@ function Home() {
                     <p>O seu site com segurança, eficiência e modernidade, tudo num lugar só.</p>
         
                     <LinkButton
-                        to="/my-portfolio/contact"
+                        to="/contact"
                         text="Contate-me"
                         customClass="important"
                     />
