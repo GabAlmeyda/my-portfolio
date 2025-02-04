@@ -9,7 +9,6 @@ import { AiOutlineMenuFold, AiOutlineMenuUnfold } from "react-icons/ai";
 
 import Waves from './Waves';
 import useViewport from '../../utils/useViewport';
-import { TbLocationQuestion } from 'react-icons/tb';
 
 /**
  * Renders a custom &lt;navbar&gt; element.
@@ -46,8 +45,8 @@ function Navbar() {
     function handleInternalLink(e, sectionId) {
         e.preventDefault();
 
-        if (location.pathname !== "/my-portfolio") {
-            navigate("/my-portfolio", { state: { scrollTo: sectionId } });
+        if (location.pathname !== "/") {
+            navigate("/", { state: { scrollTo: sectionId } });
         }
         else {
             const section = document.getElementById(sectionId);
@@ -73,7 +72,7 @@ function Navbar() {
     return (<div className={styles.gridContainer}>
         <nav className={styles.navbar} aria-label='Navegação principal'>
             <div className={styles.logo} onClick={() => {if (isMenuVisible) toggleMenuVisibility()}}>
-                <Link to="/my-portfolio">
+                <Link to="/">
                     <img src={logo} alt="Gabriel Almeyda" />
                 </Link>
             </div>
@@ -105,10 +104,10 @@ function Navbar() {
                     }}>Ferramentas</a>
                 </li>
                 <li role='menuitem'>
-                    <Link to="/my-portfolio/projects" onClick={toggleMenuVisibility}>Projetos</Link>
+                    <Link to="/projects" onClick={toggleMenuVisibility}>Projetos</Link>
                 </li>
                 <li role='menuitem'>
-                    <Link to="/my-portfolio/contact" onClick={toggleMenuVisibility}>Contato</Link>
+                    <Link to="/contact" onClick={toggleMenuVisibility}>Contato</Link>
                 </li>
             </ul>
         </nav>

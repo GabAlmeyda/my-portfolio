@@ -84,9 +84,9 @@ function Root() {
 		<Navbar />
 
 			<Routes>
-				<Route path='/my-portfolio' element={ <Home /> } />
-				<Route path='/my-portfolio/projects' element={ <Projects /> } />
-				<Route path='/my-portfolio/contact' element={ <Contact /> } />
+				<Route path='/' element={ <Home /> } />
+				<Route path='/projects' element={ <Projects /> } />
+				<Route path='/contact' element={ <Contact /> } />
 				<Route path='*' element={ <NotFound /> } />
 			</Routes>
 

@@ -22,7 +22,7 @@ function SuccessfulForm() {
 		<p>Fico feliz em ver que confia em mim para resolver seu problema.</p>
 		<p>Estarei enviando uma resposta o mais breve possível, então fique atento!</p>
 
-		<LinkButton to="/my-portfolio" text="Voltar para a Home" customClass="important"/>
+		<LinkButton to="/" text="Voltar para a Home" customClass="important"/>
 	</Container>)
 }
 

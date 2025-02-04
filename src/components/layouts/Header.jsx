@@ -37,7 +37,7 @@ function Header() {
             </div>
     
             <div className={styles.link_button}>
-                <LinkButton to="/my-portfolio/contact" text="Contate-me" />
+                <LinkButton to="/contact" text="Contate-me" />
             </div>
         </div>
 
