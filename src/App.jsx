@@ -30,7 +30,7 @@ function ChangeBgColor() {
 
 	// the values of this array are the same os the CSS classes in the 'app.css'
 	const BackgroundClasses = ["home_bg", "projects_bg", "contact_bg", "notFound_bg"];
-	const pages = ['/my-portfolio', '/my-portfolio/projects', '/my-portfolio/contact'];
+	const pages = ['/', '/projects', '/contact'];
 
 	const body = document.body;
 	useEffect(() => { 
